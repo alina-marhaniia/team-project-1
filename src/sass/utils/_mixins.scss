@@ -1,0 +1,77 @@
+@mixin font-s-w-lh-ls($s: 14, $w: 400, $lh: 27, $ls: 0.4) {
+  font-size: $s + px;
+  font-weight: $w;
+  line-height: $lh / $s;
+  letter-spacing: $ls + em;
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin button-pt-pl-fs-lh($pt: 12, $pl: 34, $fs: 14, $lh: 18) {
+  padding: calc($pt - 2) + px calc($pl - 2) + px;
+  background-color: transparent;
+  color: $color-default-dark-text;
+
+  @include font-s-w-lh-ls($s: $fs, $w: 600, $lh: $lh, $ls: 0.1);
+  border: 2px solid $color-primary-element;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: #0a8817;
+  }
+
+  &:focus {
+    color: $color-default-light-text;
+    border-color: #0a8817;
+  }
+}
+
+@mixin button-arrow-pt-pl-fs-lh($pt: 12, $pl: 34, $fs: 14, $lh: 18) {
+  position: relative;
+
+  padding: calc($pt - 2) + px 0;
+  padding-left: calc($pl - 2) + px;
+  padding-right: calc($pl + 13) + px;
+
+  color: $color-default-dark-text;
+  background-color: $color-primary-element;
+
+  @include font-s-w-lh-ls($s: $fs, $w: 600, $lh: $lh, $ls: 0.1);
+  border: 2px solid $color-primary-element;
+  border-radius: 10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 12px;
+    top: calc($pt + 1) + px;
+    right: calc($pl + 3) + px;
+
+    -webkit-mask: url('..//../images/arrow.svg');
+    mask-repeat: no-repeat;
+
+    background-color: $color-default-dark-text;
+  }
+
+  &:hover {
+    border-color: #0a8817;
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    color: $color-default-light-text;
+    border-color: #0a8817;
+    background-color: #0a8817;
+    &::before {
+      background-color: $color-default-light-text;
+    }
+  }
+}

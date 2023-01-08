@@ -1,0 +1,7 @@
+.title-h1 {
+  @include font-s-w-lh-ls($s: 38, $w: 400, $lh: 48, $ls: 0.04);
+
+  font-family: 'Seymour One';
+  text-transform: uppercase;
+  color: #fcfcfc;
+}

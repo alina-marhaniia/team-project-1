@@ -1,0 +1,16 @@
+.button-arrow {
+  @include button-arrow-pt-pl-fs-lh();
+}
+
+.button--transparent {
+  @include button-pt-pl-fs-lh(11, 26, 12, 15);
+}
+
+.button-arrow--transparent {
+  @include button-arrow-pt-pl-fs-lh();
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+}

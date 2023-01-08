@@ -1,2 +1,24 @@
 @import './common';
-@import './example';
+//@import './example';
+
+@import './base/vars';
+@import './base/defaults';
+@import './utils/utils';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+@import './components/pre-title';
+@import './components/title-h1';
+@import './components/title-h2';
+
+@import './components/button';
+
+// header
+// hero
+// products
+// about
+// advantages
+// gallery
+// customer Reviews
+// contacts
+// footer

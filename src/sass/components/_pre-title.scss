@@ -1,0 +1,6 @@
+.pre-title {
+  @include font-s-w-lh-ls($s: 30, $w: 800, $lh: 37, $ls: 0.4);
+
+  text-align: center;
+  text-transform: uppercase;
+}

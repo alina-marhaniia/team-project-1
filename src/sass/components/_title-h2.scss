@@ -1,0 +1,7 @@
+.title-h2 {
+  @include font-s-w-lh-ls($s: 36, $w: 400, $lh: 45, $ls: 0.06);
+
+  font-family: 'Seymour One';
+  text-align: center;
+  text-transform: uppercase;
+}
