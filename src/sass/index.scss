@@ -10,8 +10,8 @@
 @import './components/pre-title';
 @import './components/title-h1';
 @import './components/title-h2';
-
 @import './components/button';
+@import './components/gallery-review-wrap';
 
 // header
 // hero
@@ -22,3 +22,6 @@
 // customer Reviews
 // contacts
 // footer
+
+@import './layouts/about-modal';
+@import './layouts/locations-modal';
