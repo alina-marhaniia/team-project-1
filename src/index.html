@@ -14,21 +14,20 @@
 
     <script type="module" src="./index.js"></script>
   </head>
-  <header></header>
 
   <body>
+    <header></header>
 
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-    <include src="./partials/contacts.html"></include>
-    <div class="container gallery-review-wrap"></div>
+    <main>
+      <div class="container gallery-review-wrap"></div>
+      <include src="./partials/contacts.html"></include>
+    </main>
 
+    <include src="./partials/about-modal.html"></include>
+    <include src="./partials/locations-modal.html"></include>
+
+    <footer></footer>
   </body>
-
-  <footer></footer>
-
-  <include src="./partials/about-modal.html"></include>
-  <include src="./partials/locations-modal.html"></include>
 
   <div>
     <button class="button-arrow">Read more</button>
