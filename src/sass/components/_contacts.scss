@@ -1,22 +1,4 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-@mixin font($fs, $fw, $lh, $ls) {
-  font-size: $fs + px;
-  font-weight: $fw;
-  line-height: $lh / $fs;
-  letter-spacing: $ls + em;
-}
-.cotainer {
+.contacts {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -79,7 +61,7 @@
 .institution {
   font-family: 'Montserrat';
   display: inline-block;
-  @include font(12, 500, 14, 0.04);
+  @include font-s-w-lh-ls(12, 500, 14, 0.04);
   text-align: center;
   padding: 4px 22px;
   background-color: #f8d24e;
@@ -89,7 +71,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
     padding: 4px 13px;
-    @include font(16, 500, 22, 0.04);
+    @include font-s-w-lh-ls(16, 500, 22, 0.04);
   }
   @media screen and (min-width: 1200px) {
     padding: 4px 14px;
@@ -97,21 +79,22 @@
 }
 .city {
   font-family: 'Montserrat';
-  @include font(12, 500, 22, 0.04);
+  @include font-s-w-lh-ls(12, 500, 22, 0.04);
   color: $color-default-dark-text;
   margin-bottom: 8px;
   @media screen and (min-width: 768px) {
-    @include font(14, 500, 26, 0.04);
+    @include font-s-w-lh-ls(14, 500, 26, 0.04);
     margin-bottom: 12px;
   }
   @media screen and (min-width: 1200px) {
-    @include font(16, 500, 30, 0.04);
+    @include font-s-w-lh-ls(16, 500, 30, 0.04);
     margin-bottom: 8px;
   }
 }
 .location {
   font-family: 'Montserrat';
-  @include font(12, 500, 22, 0.04);
+  font-style: normal;
+  @include font-s-w-lh-ls(12, 500, 22, 0.04);
   text-decoration: none;
   color: #d6936d;
   cursor: pointer;
@@ -120,52 +103,55 @@
     text-decoration: underline;
   }
   @media screen and (min-width: 768px) {
-    @include font(14, 500, 26, 0.04);
+    @include font-s-w-lh-ls(14, 500, 26, 0.04);
   }
   @media screen and (min-width: 1200px) {
-    @include font(16, 500, 29, 0.04);
+    @include font-s-w-lh-ls(16, 500, 29, 0.04);
   }
 }
-.line-deecoration {
+.work-schedule-one {
+  margin-bottom: 8px;
+}
+.work-schedule-one,
+.work-schedule-two {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  @include font-s-w-lh-ls(12, 500, 22, null);
+  color: $color-default-dark-text;
+  @media screen and (min-width: 768px) {
+    @include font-s-w-lh-ls(14, 500, 26, null);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font-s-w-lh-ls(16, 500, 30, 0.04);
+  }
+}
+.open-to::before,
+.open-to::after {
+  display: block;
+  content: '';
   border: 1px solid #e1e1e1;
   margin: 24px 0;
   @media screen and (min-width: 768px) {
     margin: 32px 0;
   }
 }
-.open-to > li {
-  &:not(:last-child) {
-    margin-bottom: 8px;
-  }
-}
-.work-schedule {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Montserrat';
-  @include font(12, 500, 22, null);
-  color: $color-default-dark-text;
-  @media screen and (min-width: 768px) {
-    @include font(14, 500, 26, null);
-  }
-  @media screen and (min-width: 1200px) {
-    @include font(16, 500, 30, 0.04);
-  }
-}
 .working-time {
   font-family: 'Montserrat';
-  @include font(12, 500, 22, null);
+  @include font-s-w-lh-ls(12, 500, 22, null);
   color: #ababab;
   @media screen and (min-width: 768px) {
-    @include font(14, 500, 26, null);
+    @include font-s-w-lh-ls(14, 500, 26, null);
   }
   @media screen and (min-width: 1200px) {
-    @include font(16, 500, 30, 0.04);
+    @include font-s-w-lh-ls(16, 500, 30, 0.04);
   }
 }
 .contacts-tel,
 .contacts-mail {
   font-family: 'Montserrat';
-  @include font(12, 500, 19, null);
+  font-style: normal;
+  @include font-s-w-lh-ls(12, 500, 19, null);
   color: $color-default-dark-text;
   text-decoration: none;
   cursor: pointer;
@@ -175,18 +161,18 @@
     text-decoration: underline;
   }
   @media screen and (min-width: 768px) {
-    @include font(14, 500, 21, null);
+    @include font-s-w-lh-ls(14, 500, 21, null);
   }
   @media screen and (min-width: 1200px) {
-    @include font(16, 500, 24, null);
+    @include font-s-w-lh-ls(16, 500, 24, null);
   }
 }
 .communication > li {
   margin-bottom: 6px;
 }
-.Locations-btn {
+.locations-btn {
   font-family: 'Montserrat';
-  @include font(14, 600, 18, null);
+  @include font-s-w-lh-ls(14, 600, 18, null);
   color: #131313;
   width: 196px;
   display: flex;
@@ -219,9 +205,9 @@
     margin-right: 16px;
   }
 }
-.Franchise-btn {
+.franchise-btn {
   font-family: 'Montserrat';
-  @include font(14, 600, 18, null);
+  @include font-s-w-lh-ls(14, 600, 18, null);
   color: #000000;
   width: 196px;
   display: flex;
