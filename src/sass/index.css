@@ -1,0 +1,240 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: "Montserrat", "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  color: #131313;
+  background-color: #817c7c;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 5px;
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    padding: 0 20px;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 16px;
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.no-padding {
+  padding: 0 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.pre-title {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2333333333;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title-h1 {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.2631578947;
+  letter-spacing: 0.04em;
+  font-family: "Seymour One";
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+.title-h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+  font-family: "Seymour One";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-arrow {
+  position: relative;
+  padding: 10px 0;
+  padding-left: 32px;
+  padding-right: 47px;
+  color: #131313;
+  background-color: #f8d24e;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2857142857;
+  letter-spacing: 0.1em;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+.button-arrow::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 12px;
+  top: 13px;
+  right: 37px;
+  -webkit-mask: url("..//../images/arrow.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: #131313;
+}
+.button-arrow:hover {
+  border-color: #0a8817;
+  background-color: #0a8817;
+}
+.button-arrow:focus {
+  color: #fcfcfc;
+  border-color: #0a8817;
+  background-color: #0a8817;
+}
+.button-arrow:focus::before {
+  background-color: #fcfcfc;
+}
+
+.button--transparent {
+  padding: 9px 24px;
+  background-color: transparent;
+  color: #131313;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.1em;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+.button--transparent:hover {
+  border-color: #0a8817;
+}
+.button--transparent:focus {
+  color: #fcfcfc;
+  border-color: #0a8817;
+}
+
+.button-arrow--transparent {
+  position: relative;
+  padding: 10px 0;
+  padding-left: 32px;
+  padding-right: 47px;
+  color: #131313;
+  background-color: #f8d24e;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2857142857;
+  letter-spacing: 0.1em;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.button-arrow--transparent::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 12px;
+  top: 13px;
+  right: 37px;
+  -webkit-mask: url("..//../images/arrow.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: #131313;
+}
+.button-arrow--transparent:hover {
+  border-color: #0a8817;
+  background-color: #0a8817;
+}
+.button-arrow--transparent:focus {
+  color: #fcfcfc;
+  border-color: #0a8817;
+  background-color: #0a8817;
+}
+.button-arrow--transparent:focus::before {
+  background-color: #fcfcfc;
+}
+.button-arrow--transparent:hover, .button-arrow--transparent:focus {
+  background-color: transparent;
+}/*# sourceMappingURL=index.css.map */

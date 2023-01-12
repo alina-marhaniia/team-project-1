@@ -1,0 +1,20 @@
+.gallery-review-wrap {
+  position: relative;
+  height: 1131px;
+  background-image: url('..//../images/backgroud-wrap-des-1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include retina {
+    background-image: url('..//../images/backgroud-wrap-des-2x.png');
+  }
+
+  @media screen and(min-width:768px) {
+    height: 1017px;
+  }
+
+  @media screen and(min-width:1200px) {
+    height: 1053px;
+  }
+}
