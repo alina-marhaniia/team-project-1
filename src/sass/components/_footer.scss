@@ -1,22 +1,4 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-@mixin font($fs, $fw, $lh, $ls) {
-  font-size: $fs + px;
-  font-weight: $fw;
-  line-height: $lh / $fs;
-  letter-spacing: $ls + em;
-}
-.container {
+.footer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -37,7 +19,7 @@
 .homemade {
   max-width: 232px;
   font-family: 'Montserrat';
-  @include font(18, 700, 22, null);
+  @include font-s-w-lh-ls(18, 700, 22, null);
   text-transform: uppercase;
   color: #fcfcfc;
   margin-bottom: 16px;
@@ -45,13 +27,28 @@
 .with-passion {
   max-width: 200px;
   font-family: 'Montserrat';
-  @include font(34, 700, 41, null);
+  @include font-s-w-lh-ls(34, 700, 41, null);
   font-style: normal;
   text-transform: uppercase;
   color: #fcfcfc;
   margin-bottom: 60px;
 }
 .icon-foot {
-  fill-opacity: red;
-  fill: aqua;
+  background-color: #f8d24e;
+  border-radius: 50%;
+  fill: #84a178;
+  &:hover,
+  &:focus {
+    fill: #fcfcfc;
+  }
 }
+.soc-icon {
+  display: inline-flex;
+  margin-left: auto;
+}
+.icon-item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+// @include font-s-w-lh-ls(12, 500, 14, 0.04);
