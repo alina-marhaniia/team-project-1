@@ -1,0 +1,57 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@mixin font($fs, $fw, $lh, $ls) {
+  font-size: $fs + px;
+  font-weight: $fw;
+  line-height: $lh / $fs;
+  letter-spacing: $ls + em;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 20px 20px 20px;
+  background-color: $color-primary-background;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 40px 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 30px 16px 60px 16px;
+  }
+}
+.homemade {
+  max-width: 232px;
+  font-family: 'Montserrat';
+  @include font(18, 700, 22, null);
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 16px;
+}
+.with-passion {
+  max-width: 200px;
+  font-family: 'Montserrat';
+  @include font(34, 700, 41, null);
+  font-style: normal;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 60px;
+}
+.icon-foot {
+  fill-opacity: red;
+  fill: aqua;
+}

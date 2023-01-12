@@ -1,0 +1,256 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@mixin font($fs, $fw, $lh, $ls) {
+  font-size: $fs + px;
+  font-weight: $fw;
+  line-height: $lh / $fs;
+  letter-spacing: $ls + em;
+}
+.cotainer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 20px;
+  background-color: $color-primary-background;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 40px 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 30px 16px 60px 16px;
+  }
+}
+.contacts-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+.contacts-item {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color-default-light-text;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 40px 32px 24px 32px;
+  margin-bottom: 16px;
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+  }
+  &:last-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    padding: 40px 24px;
+    margin-bottom: 40px;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    padding: 40px;
+    margin-bottom: 60px;
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}
+.institution {
+  font-family: 'Montserrat';
+  display: inline-block;
+  @include font(12, 500, 14, 0.04);
+  text-align: center;
+  padding: 4px 22px;
+  background-color: #f8d24e;
+  border-radius: 4px;
+  color: $color-default-dark-text;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    padding: 4px 13px;
+    @include font(16, 500, 22, 0.04);
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 4px 14px;
+  }
+}
+.city {
+  font-family: 'Montserrat';
+  @include font(12, 500, 22, 0.04);
+  color: $color-default-dark-text;
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    @include font(14, 500, 26, 0.04);
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(16, 500, 30, 0.04);
+    margin-bottom: 8px;
+  }
+}
+.location {
+  font-family: 'Montserrat';
+  @include font(12, 500, 22, 0.04);
+  text-decoration: none;
+  color: #d6936d;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(14, 500, 26, 0.04);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(16, 500, 29, 0.04);
+  }
+}
+.line-deecoration {
+  border: 1px solid #e1e1e1;
+  margin: 24px 0;
+  @media screen and (min-width: 768px) {
+    margin: 32px 0;
+  }
+}
+.open-to > li {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.work-schedule {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  @include font(12, 500, 22, null);
+  color: $color-default-dark-text;
+  @media screen and (min-width: 768px) {
+    @include font(14, 500, 26, null);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(16, 500, 30, 0.04);
+  }
+}
+.working-time {
+  font-family: 'Montserrat';
+  @include font(12, 500, 22, null);
+  color: #ababab;
+  @media screen and (min-width: 768px) {
+    @include font(14, 500, 26, null);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(16, 500, 30, 0.04);
+  }
+}
+.contacts-tel,
+.contacts-mail {
+  font-family: 'Montserrat';
+  @include font(12, 500, 19, null);
+  color: $color-default-dark-text;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: #0a8817;
+    text-decoration: underline;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(14, 500, 21, null);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(16, 500, 24, null);
+  }
+}
+.communication > li {
+  margin-bottom: 6px;
+}
+.Locations-btn {
+  font-family: 'Montserrat';
+  @include font(14, 600, 18, null);
+  color: #131313;
+  width: 196px;
+  display: flex;
+  border-radius: 10px;
+  border-color: #f8d24e;
+  background-color: #f8d24e;
+  padding: 10px 39px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  &::after {
+    content: '';
+    position: relative;
+  }
+  &:hover {
+    border-color: #0a8817;
+    background-color: #0a8817;
+  }
+  &:focus {
+    border-color: #0a8817;
+    background-color: #0a8817;
+    color: #ffffff;
+    fill: #ffffff;
+  }
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+  }
+}
+.Franchise-btn {
+  font-family: 'Montserrat';
+  @include font(14, 600, 18, null);
+  color: #000000;
+  width: 196px;
+  display: flex;
+  border-radius: 10px;
+  border-color: #f8d24e;
+  background-color: transparent;
+  padding: 10px 55px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  &::after {
+    content: '';
+    position: relative;
+  }
+  &:hover {
+    border-color: #0a8817;
+  }
+  &:focus {
+    border-color: #0a8817;
+    color: #ffffff;
+    fill: #ffffff;
+  }
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
+.wrapper-btn {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
