@@ -2,12 +2,8 @@
     <div class="container">
 <nav class="header__navigation">
 <a href="" class="header__logo">
-    <picture>
-        
-    <img src="./images/mainlogo.png" alt="Logo of ice cream company">
-    </picture>
+    <img class="header__pic" src="./images/mainlogo.png" alt="Logo of ice cream company">
 </a>
-
     <ul class="header__list list">
     <li class="header__item"> 
         <a href="" class="header__link link">Home</a>
@@ -22,7 +18,34 @@
         <a href="" class="header__link link">Contact</a>
     </li>
 </ul>
+<div class="header__buttons">
+<button class="menu-button" type="button">
+    <svg 
+    width="32" 
+    height="32"
+    aria-lable="switcher of mobile menu">
+        <use href="./images/sprite.svg#icon-close"></use>
+        <use href="./images/sprite.svg#icon-burger"></use>
+    </svg>
+</button>
 <button class="header__button button-arrow " type="button">Buy now</button>
+</div>
+<div class="header__mob-menu" id="menu-container" data-menu>
+    <ul class="header__list list">
+    <li class="header__item"> 
+        <a href="" class="header__link link">Home</a>
+    </li>
+    <li class="header__item"> 
+        <a href="" class="header__link link">How it’s made?</a>
+    </li>
+    <li class="header__item"> 
+        <a href="" class="header__link link">Our products</a>
+    </li>
+    <li class="header__item"> 
+        <a href="" class="header__link link">Contact</a>
+    </li>
+</ul>
+</div>
 </nav>
 </div>
 </header>
