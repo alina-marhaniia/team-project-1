@@ -9,6 +9,10 @@
     z-index: 20;
     // position: fixed;
 }
+.header__buttons{
+padding-right: 20px;
+
+}
 .header__mob-link {
 font-weight: 700;
 font-size: 16px;
@@ -23,8 +27,18 @@ cursor: pointer;
 
 }
 .header__mob-button{
+display: inline-flex;
+align-items: center;
 width: 152px;
 height: 42px;
+
+}
+.header__mob-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
 }
 
 .menu-button{
@@ -41,17 +55,14 @@ height: 42px;
     display: none;
 
 }
-    .menu-button.is-open .menu-btn__close{
-        display: block;
-        z-index: 3;
-
-    }
-    .menu-button.is-open .menu-btn__menu{
-        display: none;
-    }
-
 .menu-button.is-open{
     position: fixed;
+}
+.menu-button.is-open .menu-btn__close{
+        display: block;
+}
+.menu-button.is-open .menu-btn__menu{
+        display: none;
 }
 
 @media screen and (max-width: 1200px){
@@ -61,6 +72,7 @@ height: 42px;
 .header__buttons{
     display: flex;
     align-items: center;
+    
 }
 .header__mob-menu{
     display: none;
@@ -70,7 +82,7 @@ height: 42px;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    top: 0;
+    top: 0px;
     padding: 48px 40px;
     width: 100vw;
     height: 100vh;
