@@ -1,5 +1,6 @@
 @import './common';
 //@import './example';
+@import './layouts/try-section';
 
 @import './base/vars';
 @import './base/defaults';
@@ -21,7 +22,7 @@
 // gallery
 // customer Reviews
 @import './components/contacts';
-// footer
+@import './components/footer';
 
 @import './layouts/about-modal';
 @import './layouts/locations-modal';
