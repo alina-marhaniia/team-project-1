@@ -3,18 +3,35 @@
     padding-bottom: 60px;
     display: block;
     text-align: center;
-    background-image: url(../images/ice-cream-back.jpg);
+    background-image: url(../images/ice-cream-back-mob.jpg);
+    
+    @include retina  {
+      background-image: url(../images/ice-cream-back-mob-2.jpg);
+    }
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     @media screen and (min-width: 768px) {
+      background-image: url(../images/ice-cream-back-tab.jpg);
+    
+    @include retina  {
+      background-image: url(../images/ice-cream-back-tab-2.jpg);
+    }
+      
       padding-bottom: 82px;
     }
   
     @media screen and (min-width: 1200px) {
+      background-image: url(../images/ice-cream-back-desk.jpg);
+    
+    @include retina  {
+      background-image: url(../images/ice-cream-back-desk-2.jpg);
+    }
       padding-bottom: 60px;
     }
+
+    
   }
   
   .products__container {
@@ -37,6 +54,7 @@
     font-weight: 800;
     font-style: 18px;
     line-height: 1.22;
+    
     @media screen and (min-width: 768px){
       font-size: 22px;
     }
@@ -47,6 +65,10 @@
     justify-content: center;
     text-transform: uppercase;
     margin-bottom: 12px;
+  }
+
+  .products__paragraph.pre-title{
+    letter-spacing: 0.04em;
   }
   
   .products__title {
