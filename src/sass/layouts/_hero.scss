@@ -28,6 +28,10 @@ text-decoration-line: underline;
 
 color: #F8D24E;
 }
+.hero__ice-cream, .hero__dots {
+        position: absolute;
+        bottom: 0px;
+}
 
 @media screen and (max-width: 767px){
     .hero__title{
@@ -42,12 +46,8 @@ color: #F8D24E;
     font-size: 34px;
     line-height: 0.97;
     }
-    .hero__picture, .hero__text, .hero__list-cafe,  .hero__btn{
+    .hero__picture, .hero__text, .hero__list-cafe, .hero__btn{
         display: none;
-    }
-    .hero__ice-cream, .hero__dots {
-        position: absolute;
-        bottom: 0px;
     }
     .hero__ice-cream{
         z-index: 1;
@@ -57,8 +57,13 @@ color: #F8D24E;
 
 @media screen and (min-width: 767px){
 .hero__title{
- max-width: 367px;
- margin-bottom: 32px;
+ max-width: 247px;
+font-weight: 400;
+font-size: 26px;
+line-height: 1.27;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+margin-bottom: 32px;
 }
 .hero__derection{
     display: flex;
@@ -105,6 +110,18 @@ text-align: right;
 
 color: #FCFCFC;
 }
+.hero__item-cafe:not(:last-child){
+margin-bottom: 20px;
+}
+.hero__info{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+.hero__list-cafe{
+    padding-top: 53px;
+}
+
 }
 
 
