@@ -5,6 +5,27 @@
     padding-top: 20px;
     padding-bottom: 14px;
 }
+.header__logo{
+    z-index: 20;
+    // position: fixed;
+}
+.header__mob-link {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.25;
+color: #FCFCFC;
+
+&:hover,
+&:focus{
+color: rgba(19, 19, 19, 1);
+cursor: pointer;
+    }
+
+}
+.header__mob-button{
+width: 152px;
+height: 42px;
+}
 
 .menu-button{
     display: inline-flex;
@@ -13,7 +34,26 @@
     border: none;
     background-color: transparent;
     fill: #FFFFFF;
+     z-index: 2;
 }
+
+.menu-btn__close{
+    display: none;
+
+}
+    .menu-button.is-open .menu-btn__close{
+        display: block;
+        z-index: 3;
+
+    }
+    .menu-button.is-open .menu-btn__menu{
+        display: none;
+    }
+
+.menu-button.is-open{
+    position: fixed;
+}
+
 @media screen and (max-width: 1200px){
     .header__list{
  display:none;
@@ -24,19 +64,25 @@
 }
 .header__mob-menu{
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+
+   &.is-open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding: 48px 40px;
     width: 100vw;
     height: 100vh;
     background-color: rgba(132, 161, 120, 1);
     padding: 112px, 104px, 112px, 88px;
     text-align: center;
     font-size: 32px;
-
+    z-index: 2;
 }
 }
 
+}
 
 @media screen and (max-width: 767px){
  .header__button{
@@ -48,8 +94,9 @@
 } 
 }
 @media screen and (min-width: 768px){
-
-    
+.header__mob-button{
+    display: none;
+}    
 .header__pic{
     width: 48px;
     height: 44px;
@@ -91,8 +138,7 @@ cursor: pointer;
 .menu-button{
     display:none;
 }
-
 .header__mob-menu{
-    display:none;
+    display: none;
 }
 }

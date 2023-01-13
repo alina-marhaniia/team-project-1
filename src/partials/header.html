@@ -19,33 +19,35 @@
     </li>
 </ul>
 <div class="header__buttons">
-<button class="menu-button" type="button">
+<button class="menu-button" data-menu-btn aria-expanded="false" aria-controls="menu-container" type="button">
     <svg 
     width="32" 
     height="32"
     aria-lable="switcher of mobile menu">
-        <use href="./images/sprite.svg#icon-close"></use>
-        <use href="./images/sprite.svg#icon-burger"></use>
+        <use class="menu-btn__close" href="./images/sprite.svg#icon-close"></use>
+        <use class="menu-btn__menu" href="./images/sprite.svg#icon-burger"></use>
     </svg>
 </button>
 <button class="header__button button-arrow " type="button">Buy now</button>
 </div>
-<div class="header__mob-menu" id="menu-container" data-menu>
-    <ul class="header__list list">
-    <li class="header__item"> 
-        <a href="" class="header__link link">Home</a>
+<div class="header__mob-menu" data-menu id="menu-container" >
+    <ul class="header__mob-list list">
+    <li class="header__mob-item"> 
+        <a href="" class="header__mob-link link">Home</a>
     </li>
-    <li class="header__item"> 
-        <a href="" class="header__link link">How it’s made?</a>
+    <li class="header__mob-item"> 
+        <a href="" class="header__mob-link link">How it’s made?</a>
     </li>
-    <li class="header__item"> 
-        <a href="" class="header__link link">Our products</a>
+    <li class="header__mob-item"> 
+        <a href="" class="header__mob-link link">Our products</a>
     </li>
-    <li class="header__item"> 
-        <a href="" class="header__link link">Contact</a>
+    <li class="header__mob-item"> 
+        <a href="" class="header__mob-link link">Contact</a>
     </li>
 </ul>
+<button class="header__mob-button button-arrow " type="button">Buy now</button>
 </div>
 </nav>
 </div>
 </header>
+<script src="./menu.js"></script>
