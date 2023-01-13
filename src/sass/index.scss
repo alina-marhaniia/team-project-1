@@ -1,7 +1,4 @@
 @import './common';
-//@import './example';
-
-@import './layouts/about';
 @import './layouts/try-section';
 
 @import './base/vars';
@@ -19,7 +16,7 @@
 // header
 // hero
 // products
-// about
+@import './layouts/about';
 // advantages
 // gallery
 // customer Reviews
