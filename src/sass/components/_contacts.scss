@@ -185,7 +185,7 @@
   width: 196px;
   display: flex;
   border-radius: 10px;
-  border-color: #f8d24e;
+  border-color: transparent;
   background-color: #f8d24e;
   padding: 10px 39px;
   text-align: center;
@@ -221,6 +221,7 @@
   display: flex;
   border-radius: 10px;
   border-color: #f8d24e;
+  border-style: solid;
   background-color: transparent;
   padding: 10px 55px;
   text-align: center;
