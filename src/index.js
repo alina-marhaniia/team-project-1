@@ -29,3 +29,20 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+// swiper-dots
+new Swiper('.try-section-dots', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
+
+// swiper-time
+new Swiper('.try-section-time', {
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+});

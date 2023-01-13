@@ -1,5 +1,4 @@
 @import './common';
-@import './layouts/try-section';
 
 @import './base/vars';
 @import './base/defaults';
@@ -18,8 +17,8 @@
 @import './layouts/products';
 @import './layouts/about';
 @import './layouts/advantages';
-// gallery
-// customer Reviews
+@import './layouts/slider-time';
+@import './layouts/slider-dots';
 @import './components/contacts';
 @import './components/footer';
 

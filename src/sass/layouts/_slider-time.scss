@@ -1,0 +1,31 @@
+.try-section-time {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  height: 300px;
+  width: 600px;
+  background-color: bisque;
+
+  & div {
+    & div {
+      display: block;
+      height: 200px;
+      width: 400px;
+      background-color: aquamarine;
+      outline: 2px solid tomato;
+
+      &:nth-child(1) {
+        background-color: blue;
+      }
+      &:nth-child(2) {
+        background-color: yellow;
+      }
+      &:nth-child(3) {
+        background-color: white;
+      }
+    }
+  }
+}
