@@ -1,0 +1,58 @@
+<div class="locations-backdrop is-hidden" locations-modal>
+  <div class="locations-modal">
+    <h2 class="title-h3 locations-modal__title">Our Locations</h2>
+
+    <div class="locations-modal__thumb-picture">
+      <picture class="locations-modal__picture">
+        <source
+          srcset="
+            ./images/locations-tab-1x.jpg 1x,
+            ./images/locations-tab-2x.jpg 2x
+          "
+          type="image/jpg"
+          media="(min-width:768px)"
+        />
+
+        <source
+          srcset="
+            ./images/locations-mob-1x.jpg 1x,
+            ./images/locations-mob-2x.jpg 2x
+          "
+          type="image/jpg"
+          media="(max-width:767px)"
+        />
+
+        <img
+          srcset="
+            ./images/locations-tab-1x.jpg 1x,
+            ./images/locations-tab-2x.jpg 2x
+          "
+          src="./images/locations-tab-1x.jpg"
+          alt="locations"
+        />
+      </picture>
+    </div>
+
+    <a
+      class="locations-modal__button-to-link"
+      href="https://goo.gl/maps/DpRWKm1G8bW77nuk8"
+      rel="noopener noreferrer nofollow"
+      target="_blank"
+    >
+      Open map
+    </a>
+
+    <button
+      class="locations-modal__button-close"
+      type="button"
+      locations-modal-close
+    >
+      <svg
+        class="locations-modal__icon-close"
+        aria-label="closing menu locations"
+      >
+        <use href="/src/images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
