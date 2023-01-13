@@ -2,45 +2,16 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    padding-top: 45px;
+
+    background-color: $color-primary-background;
 }
 
-@media screen and (max-width: 767px){
-    .hero__title{
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.27;
-    letter-spacing: 0.04em;
-    max-width: 247px;
-    margin-bottom: 32px;
-    }
-    .hero__title--size{
-    font-size: 34px;
-    line-height: 0.97;
-    }
-    .hero__picture, .hero__text, .hero__list-cafe{
-        display: none;
-    }
-    .hero__ice-cream, .hero__dots {
-        position: absolute;
-        bottom: 0px;
-    }
-    .hero__ice-cream{
-        z-index: 1;
-    }
-}
-.hero{
-padding-top: 45px;
-}
-@media screen and (min-width: 767px){
-.hero__title{
- max-width: 367px;
- margin-bottom: 32px;
-}
-}
 .hero__list{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 12px;
 }
 .hero__item:not(:last-child){
 margin-right: 12px;
@@ -56,4 +27,66 @@ text-decoration-line: underline;
 
 color: #F8D24E;
 }
+
+@media screen and (max-width: 767px){
+    .hero__title{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    max-width: 247px;
+    margin-bottom: 32px;
+    }
+    .hero__title--size{
+    font-size: 34px;
+    line-height: 0.97;
+    }
+    .hero__picture, .hero__text, .hero__list-cafe,  .hero__btn{
+        display: none;
+    }
+    .hero__ice-cream, .hero__dots {
+        position: absolute;
+        bottom: 0px;
+    }
+    .hero__ice-cream{
+        z-index: 1;
+    }
+
+}
+
+@media screen and (min-width: 767px){
+.hero__title{
+ max-width: 367px;
+ margin-bottom: 32px;
+}
+.hero__derection{
+    display: flex;
+    justify-content: flex-start;
+}
+.hero__text{ 
+    max-width: 149px;
+    margin-bottom: 12px;
+
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.4;
+
+   color: #FCFCFC;
+}
+.hero__picture{
+    margin-right: 32px;
+
+}
+.hero__btn{
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    fill:#ffffff;
+}
+.hero__info{
+    margin-right: 53px;
+}
+}
+
+
 
