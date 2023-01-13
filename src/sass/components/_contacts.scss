@@ -1,21 +1,24 @@
+.aaa{
+  background-color: $color-primary-background;
+}
 .contacts {
   position: static;
   width: 100%;
   height: 1165px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   padding: 30px 20px;
-  background-color: $color-primary-background;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    // width: 768px;
     height: 350px;
     padding: 40px 32px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    // width: 1200px;
     height: 550px;
     padding: 30px 16px 60px 16px;
   }
@@ -23,11 +26,18 @@
 .contacts-list {
   position: relative;
   top: -400px;
+   margin-left: auto;
+   margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
   @media screen and (min-width: 768px) {
+    width: 768px;
     display: flex;
     top: -350px;
   }
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     top: -155px;
   }
 }
