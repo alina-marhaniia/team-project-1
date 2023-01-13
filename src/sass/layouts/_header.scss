@@ -57,9 +57,11 @@ height: 42px;
 }
 .menu-button.is-open{
     position: fixed;
+    z-index: 5;
 }
 .menu-button.is-open .menu-btn__close{
         display: block;
+
 }
 .menu-button.is-open .menu-btn__menu{
         display: none;
