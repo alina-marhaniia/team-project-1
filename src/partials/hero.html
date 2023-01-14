@@ -86,13 +86,13 @@
 </picture>
 </div>
 
-<picture>
+<picture class="hero__dots">
 <source
           srcset="
             ./images/dots-mobile-1x.png 1x,
             ./images/dots-mobile-2x.png 2x
           "
-          media="(max-width:320px)"
+          media="(max-width:479px)"
         />
 <source
           srcset="
@@ -103,12 +103,19 @@
         />
 <source
           srcset="
-            ./images/dots-tablet-1x.png    1x,
+            ./images/dots-tablet-1x.png 1x,
             ./images/dots-tablet-2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+<source
+          srcset="
+            ./images/dots-desktop-1x.png 1x,
+            ./images/dots-desktop-2x.png 2x
           "
           media="(min-width:1200px)"
         />
-        <img src="./images/dots-desktop.png" alt="Yellow dots"/>
+        <img src="./images/dots-desktop-1x.png" alt="Yellow dots"/>
 </picture>
 
 </div>
