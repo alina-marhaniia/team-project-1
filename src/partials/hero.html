@@ -1,5 +1,5 @@
 <section class="hero">
-<div class="container">
+<div class="hero__container container ">
   <div class="hero__top-side">
   <div class="hero__info">
   <div>
@@ -27,9 +27,27 @@
   </div>
   </div>
   <div class="hero__derection">
-  <picture class="hero__picture">
-  <img class="hero__picture-bowl" src="./images/bowl-desktop.png" alt="Bowl with ice cream">
-  </picture>
+
+<picture class="hero__picture">
+<source
+          srcset="
+            ./images/con-mobile@1x.png 1x, 
+            ./images/con-mobile@2x.png 2x
+          "
+          media="(max-width:767px)"
+        />
+<source
+          srcset="
+            ./images/bowl-tablet-1x.png 1x, 
+            ./images/bowl-tablet-2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+         <img class="hero__picture-bowl" 
+         src="./images/bowl-desktop.png" 
+         alt="Bowl with ice cream"/>
+</picture>
+
   <div class="hero__info-text">
   <p class="hero__text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -67,11 +85,30 @@
          alt="Con with ice cream smiling"/>
 </picture>
 </div>
-  <picture class="hero__dots">
-  <source scrset="./images/dots-mobile-1x.png 1x, ./images/dots-mobile-2x.png 2x" media="max-width: 320px" sizes="(min-width:320px) 320px 100vw"/>
-  <source scrset="./images/dots-mobile2-1x.png 1x, ./images/dots-mobile2-2x.png 2x" media="max-width: 480px" sizes="(min-width:480px) 480px 100vw"/>
 
-<img src="./images/dots-desktop.png" alt="Yellow dots"/>
+<picture>
+<source
+          srcset="
+            ./images/dots-mobile-1x.png 1x,
+            ./images/dots-mobile-2x.png 2x
+          "
+          media="(max-width:320px)"
+        />
+<source
+          srcset="
+            ./images/dots-mobile2-1x.png 1x,
+            ./images/dots-mobile2-2x.png 2x
+          "
+          media="(min-width:480px)"
+        />
+<source
+          srcset="
+            ./images/dots-tablet-1x.png    1x,
+            ./images/dots-tablet-2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <img src="./images/dots-desktop.png" alt="Yellow dots"/>
 </picture>
 
 </div>
