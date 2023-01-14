@@ -3,8 +3,11 @@
     padding-bottom: 60px;
     display: block;
     text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+
     background-image: url(../images/ice-cream-back-mob.jpg);
-    
+
     @include retina  {
       background-image: url(../images/ice-cream-back-mob-2.jpg);
     }
@@ -13,6 +16,8 @@
     background-repeat: no-repeat;
 
     @media screen and (min-width: 768px) {
+      max-width: 768px;
+      margin: 0 auto;
       background-image: url(../images/ice-cream-back-tab.jpg);
     
     @include retina  {
@@ -23,6 +28,8 @@
     }
   
     @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      margin: 0 auto;
       background-image: url(../images/ice-cream-back-desk.jpg);
     
     @include retina  {
