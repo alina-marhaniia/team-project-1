@@ -1,70 +1,88 @@
-/* Стили для подложки */
-.overlay {
-    /* Скрываем подложку  */
-    opacity: 0;
-    visibility: hidden;
-
+.buy-now__backdrop {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(252, 252, 252, 0.9);
-    z-index: 20;
-    transition: .3s all;
-}
-
-/* Стили для модальных окон */
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    // z-index: 30;
-
-    /*  Побочные стили   */
     background: #FCFCFC;
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
+    z-index: 5;
 
-    padding: 32px;
+    @media screen and (max-width:767px) {
+        border: 2px solid #F8D24E;
+        border-radius: 10px;
+    }
 
-    transition: 0.3s all;
+    @media screen and (min-width:768px) {
+        background: rgba(252, 252, 252, 0.9);
+    }
+
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal.active,
-.overlay.active {
-    opacity: 1;
+.buy-now__backdrop.buy__is-hidden {
+    opacity: 0;
+    pointer-events: none;
     visibility: visible;
 }
 
-
-/* Стили для кнопки закрытия */
-.modal__cross {
+.buy-now__modal {
     position: absolute;
-    right: 17px;
-    top: 17px;
+    padding: 28px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    @media screen and (min-width:480px) {
+        width: 280px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 568px;
+        padding: 32px;
+        background: #FCFCFC;
+        border: 2px solid #F8D24E;
+        border-radius: 10px;
+    }
+}
+
+
+.buy-now__modal-close {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+
     width: 20px;
     height: 20px;
+
+    cursor: pointer;
+
+    background-color: #fff;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
     @media screen and (min-width:768px) {
         width: 24px;
         height: 24px;
     }
 
-    cursor: pointer;
-
-
 }
 
+
+
 // form
-.modal-form {
+.buy-now__modal-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-input {
+.buy-now__form-input {
     margin-bottom: 12px;
 
     @media screen and (min-width:768px) {
@@ -72,7 +90,7 @@
     }
 }
 
-.form-textarea {
+.buy-now__form-textarea {
     margin-bottom: 24px;
 
     @media screen and (min-width:768px) {
@@ -81,8 +99,8 @@
 }
 
 
-.form-input,
-.form-textarea {
+.buy-now__form-input,
+.buy-now__form-textarea {
     display: block;
     padding: 8px 12px 7px;
     width: 200px;
@@ -97,8 +115,8 @@
     border-radius: 10px;
 }
 
-.form-input::placeholder,
-.form-textarea::placeholder {
+.buy-now__form-input::placeholder,
+.buy-now__form-textarea::placeholder {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -114,7 +132,7 @@
 
 }
 
-.modal-form-btn {
+.buy-now__modal-form-btn {
     width: 114px;
     height: 42px;
     background: #F8D24E;
