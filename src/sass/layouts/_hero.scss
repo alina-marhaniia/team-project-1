@@ -159,6 +159,10 @@ margin-bottom: 20px;
 
 @media screen and (min-width: 1200px){
 
+.hero{
+padding-bottom: 65px;
+}
+
 .hero__title{
 max-width: 367px;
 font-weight: 400;
@@ -176,7 +180,9 @@ text-align: right;
 letter-spacing: 0.04em; 
  }
 
-
+.hero__info-text{
+    margin-top: 116px;
+}
  .hero__item-text{
 font-weight: 400;
 font-size: 14px;
@@ -189,5 +195,11 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.4;
 }
+.hero__dots{
+    bottom: -15%;
 }
-
+.hero__ice-cream {
+z-index: 1;
+top: -5%;
+}
+}
