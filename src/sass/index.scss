@@ -1,24 +1,26 @@
+// base
 @import './common';
-
 @import './base/vars';
 @import './base/defaults';
 @import './utils/utils';
 @import './utils/mixins';
 @import './utils/placeholders';
-
+// components
 @import './components/pre-title';
 @import './components/title-h1';
 @import './components/title-h2';
 @import './components/button';
 @import './components/gallery-review-wrap';
-
+// layouts
 @import './layouts/header';
-// hero
+@import './layouts/hero.scss';
 @import './layouts/products';
 @import './layouts/about';
 @import './layouts/advantages';
+
 @import './layouts/slider-time';
 @import './layouts/slider-dots';
+
 @import './components/contacts';
 @import './components/footer';
 
