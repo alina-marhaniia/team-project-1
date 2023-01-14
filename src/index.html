@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Ice Cream</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
@@ -28,23 +25,35 @@
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
 
-      <div class="container gallery-review-wrap">
-        <!-- секция Игоря
-        секция Виктора -->
-        <include src="./partials/slider-time.html"></include>
-        <include src="./partials/slider-dots.html"></include>
-      </div>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
 
       <include src="./partials/contacts.html"></include>
     </main>
 
     <include src="./partials/footer.html"></include>
+    <div class="container gallery-review-wrap">
+      <!-- секция Игоря
+        секция Виктора -->
+      <include src="./partials/slider-time.html"></include>
+      <include src="./partials/slider-dots.html"></include>
+    </div>
 
     <include src="./partials/about-modal.html"></include>
     <include src="./partials/locations-modal.html"></include>
     <include src="./partials/franchise-modal.html"></include>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/js/gallery.js"></script>
 
     <script src="./menu.js"></script>
     <script src="./franchise-modal.js"></script>

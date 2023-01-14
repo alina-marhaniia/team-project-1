@@ -1,0 +1,89 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5px;
+  @media screen and (min-width: 320px) {
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 16px;
+  }
+}
+.gallery-review-wrap {
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  background-size: cover;
+  position: relative;
+  background-image: url(/src/images/gallery/Backgroud_desktop1x.jpg);
+  // display: block;
+  // width: 885px;
+  height: 1131px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/gallery/Backgroud_desktop2x.jpg);
+  }
+
+  // @media screen and (max-width:767px){
+  // //     background-image: url(/src/images/gallery/Backgroud_mobile1x.jpg);
+  // // @include retina {
+  // //     background-image: url(/src/images/gallery/Backgroud_mobile2x.jpg);
+  // // }
+
+  // }
+
+  @media screen and (min-width: 768px) {
+    // background-image: url(/src/images/gallery/Background_tablet1x.jpg);
+    // @include retina {
+    // background-image: url(/src/images/gallery/Background_tablet2x.jpg);
+    // }
+    // width: 963px;
+    height: 1017px;
+  }
+  @media screen and (min-width: 1200px) {
+    // background-image: url(/src/images/gallery/Backgroud_desktop1x.jpg);
+    //     @include retina {
+    //     background-image: url(/src/images/gallery/Backgroud_desktop2x.jpg);
+    //     }
+    //     width: 1300px;
+    height: 1053px;
+  }
+}
+
+.gallery__content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 24px;
+
+  @media screen and (max-width: 767px) {
+    top: -30px;
+    width: 280px;
+    height: 130px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: -150px;
+    width: 704px;
+    height: 327px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: -105px;
+    width: 1013px;
+    height: 422px;
+  }
+}
+.thumb-pic img {
+  min-width: 100%;
+}

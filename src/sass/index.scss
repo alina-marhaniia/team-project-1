@@ -18,8 +18,8 @@
 @import './layouts/about';
 @import './layouts/advantages';
 
-@import './layouts/slider-time';
-@import './layouts/slider-dots';
+@import './components/gallery';
+@import './components/customer-reviews';
 
 @import './components/contacts';
 @import './components/footer';
@@ -27,3 +27,13 @@
 @import './layouts/about-modal';
 @import './layouts/locations-modal';
 @import './layouts/modal-franchise';
+
+// header
+// hero
+// products
+// about
+// advantages
+@import './layouts/slider-time';
+@import './layouts/slider-dots';
+// contacts
+// footer
