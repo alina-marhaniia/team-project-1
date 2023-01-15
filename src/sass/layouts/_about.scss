@@ -163,6 +163,7 @@
 }
 .about__button {
   margin-top: 10px;
+  transition: background-color 300ms linear;
 
   @media screen and (min-width: 768px) {
     margin-top: 32px;
