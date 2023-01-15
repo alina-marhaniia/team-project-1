@@ -1095,6 +1095,7 @@ img {
 
 .about__button {
   margin-top: 10px;
+  transition: background-color 300ms linear;
 }
 @media screen and (min-width: 768px) {
   .about__button {
@@ -1708,6 +1709,7 @@ img {
   color: #131313;
   text-decoration: none;
   cursor: pointer;
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-tel:hover, .contacts-tel:focus,
 .contacts-mail:hover,
@@ -1755,6 +1757,7 @@ img {
   text-align: center;
   align-items: center;
   cursor: pointer;
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .locations-btn::after {
   content: "";
@@ -1799,6 +1802,7 @@ img {
   text-align: center;
   align-items: center;
   cursor: pointer;
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .franchise-btn::after {
   content: "";
@@ -1941,6 +1945,7 @@ img {
   background-color: #f8d24e;
   border-radius: 50%;
   fill: #84a178;
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-foot:hover, .icon-foot:focus {
   fill: #fcfcfc;
@@ -2006,11 +2011,16 @@ img {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 40px;
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .foot-tel {
     margin-bottom: 60px;
   }
+}
+.foot-tel:hover, .foot-tel:focus {
+  color: #f8d24e;
+  text-decoration: underline;
 }
 
 .foot-tel-txt {
@@ -2249,29 +2259,35 @@ img {
   }
 }
 
-.backdrop {
+.franchise__backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: #fcfcfc;
-  z-index: 4;
+  z-index: 5;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
-  .backdrop {
+  .franchise__backdrop {
     border: 2px solid #f8d24e;
     border-radius: 10px;
   }
 }
 @media screen and (min-width: 768px) {
-  .backdrop {
+  .franchise__backdrop {
     background: rgba(252, 252, 252, 0.9);
   }
 }
 
-.modal {
+.franchise__backdrop.franchise__is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: visible;
+}
+
+.franchise__modal {
   position: absolute;
   padding: 28px;
   top: 50%;
@@ -2279,12 +2295,12 @@ img {
   transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 480px) {
-  .modal {
+  .franchise__modal {
     width: 280px;
   }
 }
 @media screen and (min-width: 768px) {
-  .modal {
+  .franchise__modal {
     width: 568px;
     padding: 32px;
     background: #fcfcfc;
@@ -2293,7 +2309,7 @@ img {
   }
 }
 
-.modal-close {
+.franchise__modal-close {
   position: absolute;
   right: 12px;
   top: 12px;
@@ -2307,34 +2323,22 @@ img {
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .modal-close {
+  .franchise__modal-close {
     width: 24px;
     height: 24px;
   }
 }
 
-.modal-title {
+.franchise__modal-title {
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  color: #131313;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .modal-title {
-    font-size: 20px;
-    line-height: 1.4;
-    width: 322px;
-  }
+  line-height: 1.37;
+  margin: 24px auto 32px;
 }
 
-.modal-desc {
+.franchise__modal-desc {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -2344,7 +2348,7 @@ img {
   margin: 20px auto 24px;
 }
 @media screen and (min-width: 768px) {
-  .modal-desc {
+  .franchise__modal-desc {
     width: 448px;
     font-size: 16px;
     line-height: 1.37;
@@ -2352,32 +2356,33 @@ img {
   }
 }
 
-.modal-form {
+.franchise__modal-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.form-input {
+.franchise__form-input {
   margin-bottom: 12px;
 }
 @media screen and (min-width: 768px) {
-  .form-input {
+  .franchise__form-input {
     margin-bottom: 16px;
   }
 }
 
-.form-textarea {
+.franchise__form-textarea {
   margin-bottom: 24px;
+  resize: none;
 }
 @media screen and (min-width: 768px) {
-  .form-textarea {
+  .franchise__form-textarea {
     margin-bottom: 32px;
   }
 }
 
-.form-input,
-.form-textarea {
+.franchise__form-input,
+.franchise__form-textarea {
   display: block;
   padding: 8px 12px 7px;
   width: 200px;
@@ -2386,14 +2391,14 @@ img {
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
-  .form-input,
-.form-textarea {
+  .franchise__form-input,
+.franchise__form-textarea {
     width: 336px;
     padding: 11px 16px;
   }
 }
 
-.form-input::-moz-placeholder, .form-textarea::-moz-placeholder {
+.franchise__form-input::-moz-placeholder, .franchise__form-textarea::-moz-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -2402,7 +2407,7 @@ img {
   color: #131313;
 }
 
-.form-input:-ms-input-placeholder, .form-textarea:-ms-input-placeholder {
+.franchise__form-input:-ms-input-placeholder, .franchise__form-textarea:-ms-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -2411,8 +2416,8 @@ img {
   color: #131313;
 }
 
-.form-input::placeholder,
-.form-textarea::placeholder {
+.franchise__form-input::placeholder,
+.franchise__form-textarea::placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -2421,19 +2426,19 @@ img {
   color: #131313;
 }
 @media screen and (min-width: 768px) {
-  .form-input::-moz-placeholder, .form-textarea::-moz-placeholder {
+  .franchise__form-input::-moz-placeholder, .franchise__form-textarea::-moz-placeholder {
     font-size: 14px;
   }
-  .form-input:-ms-input-placeholder, .form-textarea:-ms-input-placeholder {
+  .franchise__form-input:-ms-input-placeholder, .franchise__form-textarea:-ms-input-placeholder {
     font-size: 14px;
   }
-  .form-input::placeholder,
-.form-textarea::placeholder {
+  .franchise__form-input::placeholder,
+.franchise__form-textarea::placeholder {
     font-size: 14px;
   }
 }
 
-.modal-form-btn {
+.franchise__modal-form-btn {
   width: 114px;
   height: 42px;
   background: #f8d24e;
@@ -2449,7 +2454,290 @@ img {
   line-height: 1.25;
 }
 @media screen and (min-width: 768px) {
-  .modal-form-btn {
+  .franchise__modal-form-btn {
+    width: 121px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+.buy-now__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FCFCFC;
+  z-index: 20;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .buy-now__backdrop {
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buy-now__backdrop {
+    background: rgba(252, 252, 252, 0.9);
+  }
+}
+
+.buy-now__backdrop.buy-now__is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: visible;
+}
+
+.buy-now__modal {
+  position: absolute;
+  z-index: 30;
+  padding: 28px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 480px) {
+  .buy-now__modal {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buy-now__modal {
+    width: 568px;
+    padding: 32px;
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+  }
+}
+
+.buy-now__modal-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__modal-close {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.buy-now__modal-title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__modal-title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 40;
+  }
+}
+
+.buy-now__list {
+  margin-bottom: 31px;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__list {
+    display: flex;
+    margin-bottom: 40px;
+  }
+}
+
+.buy-now__pic {
+  position: relative;
+  z-index: 3;
+}
+
+.buy-now__pic::before {
+  content: " ";
+  position: absolute;
+  top: 7px;
+  z-index: 0;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+}
+
+.buy-now__pic.green::before {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.buy-now__pic.yellow::before {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.buy-now__pic.brown::before {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.buy-now__product-thumb {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  border-radius: 15px;
+  border: 2px solid #96AF8C;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  padding: 20px 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.buy-now__product-thumb.yellow {
+  border-color: #EFD478;
+  background-color: #EFD478;
+}
+
+.buy-now__product-thumb.brown {
+  border-color: #D6936D;
+}
+
+.buy-now__img {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 3;
+  margin-bottom: -50%;
+}
+
+.buy-now__list > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__list > li:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.buy-now__modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy-now__form-input {
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__form-input {
+    margin-bottom: 16px;
+  }
+}
+
+.buy-now__form-textarea {
+  margin-bottom: 24px;
+  resize: none;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__form-textarea {
+    margin-bottom: 32px;
+  }
+}
+
+.buy-now__form-input,
+.buy-now__form-textarea {
+  display: block;
+  padding: 8px 12px 7px;
+  width: 200px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__form-input,
+.buy-now__form-textarea {
+    width: 336px;
+    padding: 11px 16px;
+  }
+}
+
+.buy-now__form-input::-moz-placeholder, .buy-now__form-textarea::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.43;
+  color: #131313;
+}
+
+.buy-now__form-input:-ms-input-placeholder, .buy-now__form-textarea:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.43;
+  color: #131313;
+}
+
+.buy-now__form-input::placeholder,
+.buy-now__form-textarea::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.43;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__form-input::-moz-placeholder, .buy-now__form-textarea::-moz-placeholder {
+    font-size: 14px;
+  }
+  .buy-now__form-input:-ms-input-placeholder, .buy-now__form-textarea:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .buy-now__form-input::placeholder,
+.buy-now__form-textarea::placeholder {
+    font-size: 14px;
+  }
+}
+
+.buy-now__modal-form-btn {
+  width: 114px;
+  height: 42px;
+  background: #F8D24E;
+  border-radius: 10px;
+  border: none;
+  display: inline-block;
+  color: #131313;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__modal-form-btn {
     width: 121px;
     font-size: 14px;
     line-height: 1.21;
