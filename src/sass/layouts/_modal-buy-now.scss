@@ -16,7 +16,7 @@
         background: rgba(252, 252, 252, 0.9);
     }
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 300ms linear;
 }
 
 .buy-now__backdrop.buy-now__is-hidden {
@@ -32,6 +32,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 
 
     @media screen and (min-width:480px) {
@@ -64,6 +65,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  
 
 
     @media screen and (min-width:768px) {
@@ -75,6 +77,7 @@
     &:focus{
         background-color: #aaa3;
         border-radius: 6px;
+        transition: opacity 300ms linear;
     }
 
 }
@@ -285,9 +288,11 @@
 
     &:hover {
         background-color: rgba(10, 136, 23, 1);
+        transition: opacity 300ms linear;
     }
     &:focus {
         color:#fff;
+        transition: opacity 300ms linear;
     }
 
     @media screen and (min-width:768px) {

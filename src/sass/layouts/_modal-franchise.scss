@@ -15,7 +15,7 @@
     background: rgba(252, 252, 252, 0.9);
   }
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms linear;
 }
 
 .franchise__backdrop.franchise__is-hidden {
@@ -65,6 +65,7 @@
       &:focus {
         background-color: #aaa3;
         border-radius: 6px;
+        transition: opacity 300ms linear;
       }
 
   @media screen and (min-width: 768px) {
@@ -171,10 +172,12 @@
   line-height: 1.25;
   &:hover {
       background-color: rgba(10, 136, 23, 1);
+      transition: opacity 300ms linear;
     }
   
     &:focus {
       color: #fff;
+      transition: opacity 300ms linear;
     }
 
   @media screen and (min-width: 768px) {
