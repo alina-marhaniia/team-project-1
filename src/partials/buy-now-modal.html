@@ -1,16 +1,33 @@
 <!-- modal buy now -->
-<div class="buy-now__backdrop buy__is-hidden" buy-modal>
+<div class="buy-now__backdrop buy-now__is-hidden" buy-now-modal>
     <div class="buy-now__modal">
-        <svg class="buy-now__modal-close" buy-modal-close >
+        <svg class="buy-now__modal-close" buy-now-modal-close >
             <use href="./images/sprite.svg#icon-close"></use>
         </svg>
-        <h2>Buy now</h2>
-        <ul>
-            <li>ice cream</li>
-            <li>ice coffee</li>
-            <li>milkshake</li>
-        </ul>
         <form class="buy-now__modal-form">
+            <h2 class="buy-now__modal-title">Buy now</h2>
+            <!-- checkbox -->
+            <div class="buy-now__checkbox">
+                <label class="buy-now__cb-label">
+                    <input type="checkbox" name="product" value="ice cream" class="visually-hidden">
+                    ice cream
+                </label>
+                <label class="buy-now__cb-label">
+                    <input type="checkbox" name="product" value="ice coffee" class="visually-hidden"  />
+                    ice coffee
+                </label>
+                <label class="buy-now__cb-label">
+                    <input type="checkbox" name="product" value="milkshake" class="visually-hidden" />
+                    milkshake
+                </label>
+            </div>
+
+            <!-- <ul>
+                <li>ice cream</li>
+                <li>ice coffee</li>
+                <li>milkshake</li>
+            </ul> -->
+        
             <label class="buy-now__form-label">
                 <input type="text" class="buy-now__form-input" name="name" placeholder="Name">
             </label>

@@ -131,6 +131,7 @@
 }
 .franchise__form-textarea {
     margin-bottom: 24px;
+    resize:none;
     @media screen and (min-width:768px) {
             margin-bottom: 32px;
         }
