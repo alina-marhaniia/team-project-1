@@ -1,4 +1,4 @@
-function checkParams() {
+function checkParamsBuynow() {
     var BuynowName = $('#Buynow_name').val();
     var BuynowPhone = $('#Buynow_tel').val();
      

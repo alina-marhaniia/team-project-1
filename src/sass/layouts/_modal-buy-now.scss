@@ -6,16 +6,13 @@
     height: 100%;
     background: #FCFCFC;
     z-index: 20;
-
     @media screen and (max-width:767px) {
         border: 2px solid #F8D24E;
         border-radius: 10px;
     }
-
-    @media screen and (min-width:768px) {
-        background: rgba(252, 252, 252, 0.9);
-    }
-
+        @media screen and (min-width:768px) {
+            background: rgba(252, 252, 252, 0.9);
+        }
     transition: opacity 300ms linear;
 }
 
@@ -32,20 +29,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-
 
     @media screen and (min-width:480px) {
         width: 280px;
     }
-
-    @media screen and (min-width:768px) {
-        width: 568px;
-        padding: 32px;
-        background: #FCFCFC;
-        border: 2px solid #F8D24E;
-        border-radius: 10px;
-    }
+        @media screen and (min-width:768px) {
+            width: 568px;
+            padding: 32px;
+            background: #FCFCFC;
+            border: 2px solid #F8D24E;
+            border-radius: 10px;
+        }
 }
 
 
@@ -53,21 +47,17 @@
     position: absolute;
     right: 12px;
     top: 12px;
-
     width: 20px;
     height: 20px;
-
-    cursor: pointer;
-
+    
     background-color: #fff;
     border: none;
+    cursor: pointer;
 
     display: flex;
     justify-content: center;
     align-items: center;
   
-
-
     @media screen and (min-width:768px) {
         width: 24px;
         height: 24px;
@@ -101,27 +91,31 @@
             margin-bottom: 40;
         }
 }
-//     .visually-hidden {
-//             position: absolute;
-//             width: 1px;
-//             height: 1px;
-//             margin: -1px;
-//             border: 0;
-//             padding: 0;
-//             white-space: nowrap;
-//             -webkit-clip-path: inset(100%);
-//             clip-path: inset(100%);
-//             clip: rect(0 0 0 0);
-//             overflow: hidden;
-// }
+    
 
 .buy-now__list {
     margin-bottom: 31px;
-    @media screen and (min-width:768px){
-        display: flex;
-        margin-bottom: 40px;
-    }
+        @media screen and (min-width:768px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
 }
+
+.buy-now__list>li:not(:last-child) {
+    margin-bottom: 20px;
+        @media screen and (min-width:768px) {
+            margin-right: 32px;
+            margin-bottom: 0;
+        }
+}
+
+.bn_label{
+    cursor: pointer;
+}
+
+
 .buy-now__pic{
     position: relative;
     z-index: 3;
@@ -155,8 +149,6 @@
 
 .buy-now__product-thumb {
     position: relative;
-   
-
     width: 136px;
     height: 136px;
 
@@ -178,6 +170,7 @@
     color: #131313;
 
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     flex-wrap: nowrap;
 
@@ -185,14 +178,12 @@
 
 .buy-now__product-thumb.yellow {
     border-color: #EFD478;
-    background-color: #EFD478;
-
+    background-color: #EFD478;   
 }
 
 .buy-now__product-thumb.brown {
     border-color: #D6936D;
 }
-
 
 .buy-now__img {
     width: 132px;
@@ -204,11 +195,18 @@
     margin-bottom: -50%;
 }
 
-.buy-now__list>li:not(:last-child){
-    margin-bottom: 20px;
-    @media screen and (min-width:768px) {
-        margin-right: 32px;
-    }
+.bn-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
@@ -232,7 +230,7 @@
 }
 
 .buy-now__form-input:not(:placeholder-shown):required:valid {
-    border-color: rgba(132, 161, 120, 1);
+    border-color: rgba(248, 210, 78, 1);
 }
 
 .buy-now__form-textarea {
@@ -242,7 +240,6 @@
         margin-bottom: 32px;
     }
 }
-
 
 .buy-now__form-input,
 .buy-now__form-textarea {
@@ -269,12 +266,15 @@
     line-height: 1.43;
 
     color: #131313;
-
-
+        
     @media screen and (min-width:768px) {
-        font-size: 14px;
-    }
+            font-size: 14px;
+        }
 
+}
+
+.buy-now__modal-form-btn:disabled {
+    background: #ABABAB;
 }
 
 .buy-now__modal-form-btn {
@@ -294,11 +294,11 @@
     font-size: 12px;
     line-height: 1.25;
 
-    &:hover {
+    &:enabled:hover {
         background-color: rgba(10, 136, 23, 1);
         transition: opacity 300ms linear;
     }
-    &:focus {
+    &:enabled:focus {
         color:#fff;
         transition: opacity 300ms linear;
     }
@@ -310,6 +310,4 @@
     }
 }
 
-.buy-now__modal-form-btn:disabled {
-    background: #ABABAB;
-}
+

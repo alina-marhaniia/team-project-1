@@ -1,4 +1,4 @@
-function checkParams() {
+function checkParamsFranchise() {
     var FranchiseName = $('#franchise_name').val();
     var FranchiseEmail = $('#franchise_email').val();
     var FranchisePhone = $('#franchise_tel').val();

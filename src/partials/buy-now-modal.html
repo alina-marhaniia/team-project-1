@@ -7,10 +7,10 @@
     <form class="buy-now__modal-form">
       <h2 class="buy-now__modal-title">Buy now</h2>
 
-      <!-- checkbox -->
-
       <ul class="buy-now__list">
         <li>
+          <label class="bn_label">
+          <input type="checkbox" name="product" value="ice cream" class="bn-visually-hidden">
           <div class="buy-now__pic green">
             <picture>
               <source
@@ -34,11 +34,12 @@
               />
             </picture>
           </div>
-
           <div class="buy-now__product-thumb green">ice cream</div>
+          </label>
         </li>
-
         <li>
+          <label class="bn_label">
+          <input type="checkbox" name="product" value="ice coffee" class="bn-visually-hidden">
           <div class="buy-now__pic yellow">
             <picture>
               <source
@@ -62,11 +63,12 @@
               />
             </picture>
           </div>
-
           <div class="buy-now__product-thumb yellow">ice coffee</div>
+          <label>
         </li>
-
         <li>
+          <label class="bn_label">
+          <input type="checkbox" name="product" value="milkshake" class="bn-visually-hidden">
           <div class="buy-now__pic brown">
             <picture>
               <source
@@ -91,12 +93,12 @@
             </picture>
           </div>
           <div class="buy-now__product-thumb brown">milkshake</div>
+          </label>
         </li>
       </ul>
-      
 
       <label class="buy-now__form-label">
-        <input onkeyup="checkParams()"
+        <input onkeyup="checkParamsBuynow()"
           id="Buynow_name"
           type="text"
           class="buy-now__form-input"
@@ -107,9 +109,8 @@
           title="Use only letters"
         />
       </label>
-
       <label class="buy-now__form-label">
-        <input onkeyup="checkParams()"
+        <input onkeyup="checkParamsBuynow()"
           id="Buynow_tel"
           type="tel"
           class="buy-now__form-input"
@@ -118,9 +119,7 @@
           required  
           pattern="\+\d{3} \d{2} \d{3} \d{2} \d{2}" 
           title="+xxx xx xxx xx xx">
-        
       </label>
-
       <label class="buy-now__form-label">
         <textarea
           class="buy-now__form-textarea"
@@ -129,7 +128,7 @@
           placeholder="Comment"
         ></textarea>
       </label>
-      <button type="submit" id="Buynow_submit" class="buy-now__modal-form-btn">Submit</button>
+      <button type="submit" id="Buynow_submit" class="buy-now__modal-form-btn" disabled>Submit</button>
     </form>
 
 
