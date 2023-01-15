@@ -21,7 +21,7 @@
 // });
 
 new Swiper('.image-slider', {
-    autoplay: {
-        delay:2000
-    }
+  autoplay: {
+    delay: 2000,
+  },
 });
