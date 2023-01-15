@@ -4,6 +4,70 @@
     padding-bottom: 12px;
 
     background-color: $color-primary-background;
+    background-repeat: no-repeat;
+    background-position: bottom 0px center;
+   
+@media screen and(max-width: 479px){
+    background-image: url('../images/dots-mobile-1x.png'),
+    url('../images/con-mobile@1x.png');
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero__container {
+    background-image: url('../images/dots-mobile-2x.png'),
+    url('../images/con-mobile@2x.png');
+}
+}
+}
+@media screen and(min-width: 480px){
+    background-image: url('../images/dots-mobile2-1x.png'),
+    url('../images/con-mobile@1x.png');
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero__container {
+    background-image: url('../images/dots-mobile2-2x.png'),
+    url('../images/con-mobile@2x.png');
+
+}
+} 
+}
+@media screen and(min-width: 768px){
+    background-position: bottom 0px center, bottom 0px right 92px;
+    background-image: url('../images/dots-tablet-1x.png'),
+    url('../images/con-tablet-1x.png');
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero__container {
+    background-image: url('../images/dots-tablet-2x.png'),
+     url('../images/con-tablet-2x.png');
+        }
+    }
+
+}
+@media screen and(min-width: 1200px){
+    background-position: bottom 0px center, bottom 0px right 92px;
+    background-image: url('../images/dots-desktop-1x.png'),
+     url('../images/con-desktop.png');
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero__container {
+    background-image: url('../images/dots-desktop-2x.png'),
+     url('../images/con-desktop-2x.png');
+
+}
+} 
+}
 }
 
 .hero__list{
@@ -36,10 +100,10 @@ color: #F8D24E;
     right: 20%;
     z-index: 1;
     }
-    .hero__dots{
-        bottom: -160%;
-        right: 0%;
-    }
+    // .hero__dots{
+    //     bottom: -160%;
+    //     right: 0%;
+    // }
 }
 
 @media screen and (min-width: 480px){
@@ -48,10 +112,10 @@ color: #F8D24E;
     right: 10%;
     z-index: 1;
 }
-.hero__dots{
-    bottom: -80%;
-    right: 0%;
-}
+// .hero__dots{
+//     bottom: -80%;
+//     right: 0%;
+// }
 }
 
 @media screen and (max-width: 767px){
@@ -150,9 +214,9 @@ margin-bottom: 20px;
     right: 92px;
     z-index: 1;
 }
-.hero__dots{
-    bottom: 0px;
-}
+// .hero__dots{
+//     bottom: 0px;
+// }
 }
 
 @media screen and (min-width: 1200px){
@@ -193,9 +257,9 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.4;
 }
-.hero__dots{
-    bottom: -15%;
-}
+// .hero__dots{
+//     bottom: -15%;
+// }
 .hero__ice-cream {
 z-index: 1;
 top: -5%;
