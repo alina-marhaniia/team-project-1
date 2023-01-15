@@ -60,6 +60,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+    
+  &:hover,
+      &:focus {
+        background-color: #aaa3;
+        border-radius: 6px;
+      }
 
   @media screen and (min-width: 768px) {
     width: 24px;
@@ -163,6 +169,13 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
+  &:hover {
+      background-color: rgba(10, 136, 23, 1);
+    }
+  
+    &:focus {
+      color: #fff;
+    }
 
   @media screen and (min-width: 768px) {
     width: 121px;
