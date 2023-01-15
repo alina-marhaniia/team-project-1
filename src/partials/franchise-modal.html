@@ -17,18 +17,18 @@
 
         <form class="franchise__modal-form">
             <label class="franchise__form-label">
-                <input type="text" class="franchise__form-input" name="name" placeholder="Name">
+                <input onkeyup="checkParamsFranchise()" type="text" id="franchise_name"  class="franchise__form-input" name="name" placeholder="Name" required pattern="[a-zA-Z ]+" title="Use only letters">
             </label>
             <label class="franchise__form-label">
-                <input type="tel" class="franchise__form-input" name="phone_number" placeholder="Phone">
+                <input onkeyup="checkParamsFranchise()" type="tel" id="franchise_tel" class="franchise__form-input" name="phone_number" placeholder="Phone" required  pattern="\+\d{3} \d{2} \d{3} \d{2} \d{2}" title="+xxx xx xxx xx xx">
             </label>
             <label class="franchise__form-label">
-                <input type="email" class="franchise__form-input" name="email" placeholder="Email">
+                <input onkeyup="checkParamsFranchise()" type="email" id="franchise_email" class="franchise__form-input" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="example@mail.com">
             </label>
             <label class="franchise__form-label">
                 <textarea class="franchise__form-textarea" name="comment" rows="5" placeholder="Comment"></textarea>
-            </label>
-            <button type="submit" class="franchise__modal-form-btn">Submit</button>
+            </label>  
+            <button type="submit" id="franchise-submit" class="franchise__modal-form-btn" disabled>Submit</button>
         </form>
     </div>
 </div>
