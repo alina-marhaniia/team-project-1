@@ -2,24 +2,47 @@
   <div class="header-container container">
     <nav class="header__navigation">
       <a href="" class="header__logo">
-        <img
-          class="header__pic"
-          src="./images/mainlogo.png"
-          alt="Logo of ice cream company"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/mainlogo-mobile-1x.png 1x,
+              ./images/mainlogo-mobile-2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <source
+            srcset="
+              ./images/mainlogo-tablet-1x.png 1x,
+              ./images/mainlogo-tablet-2x.png 2x
+            "
+            media="(min-width:768px) and (max-width:1199px)"
+          />
+          <source
+            srcset="
+              ./images/mainlogo-desktop-1x.png 1x,
+              ./images/mainlogo-desktop-2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <img
+            class="header__pic"
+            src="./images/mainlogo.png"
+            alt="Logo of ice cream company"
+          />
+        </picture>
       </a>
       <ul class="header__list list">
         <li class="header__item">
           <a href="" class="header__link link">Home</a>
         </li>
         <li class="header__item">
-          <a href="#how-its-made" class="header__link link">How it's made?</a>
+          <a href="" class="header__link link">How it’s made?</a>
         </li>
         <li class="header__item">
-          <a href="#products" class="header__link link">Our products</a>
+          <a href="" class="header__link link">Our products</a>
         </li>
         <li class="header__item">
-          <a href="#contacts" class="header__link link">Contact</a>
+          <a href="" class="header__link link">Contact</a>
         </li>
       </ul>
       <div class="header__buttons">
@@ -41,11 +64,7 @@
             ></use>
           </svg>
         </button>
-        <button
-          class="header__button button-arrow"
-          type="button"
-          buy-now-modal-open
-        >
+        <button class="header__button button-arrow" type="button">
           Buy now
         </button>
       </div>
@@ -72,11 +91,7 @@
               <a href="" class="header__mob-link link">Contact</a>
             </li>
           </ul>
-          <button
-            class="header__mob-button button-arrow"
-            type="button"
-            buy-now-modal-open
-          >
+          <button class="header__mob-button button-arrow" type="button">
             Buy now
           </button>
         </div>
