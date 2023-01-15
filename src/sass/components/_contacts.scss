@@ -194,7 +194,7 @@
   padding: 10px 39px;
   text-align: center;
   align-items: center;
-  cursor: pointer;
+  cursor: url('..//../images/pointer.svg'), auto;
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::after {
     content: '';
@@ -231,7 +231,7 @@
   padding: 10px 55px;
   text-align: center;
   align-items: center;
-  cursor: pointer;
+  cursor: url('..//../images/pointer.svg'), auto;
   transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::after {
     content: '';

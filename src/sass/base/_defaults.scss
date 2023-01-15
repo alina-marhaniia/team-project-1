@@ -7,6 +7,8 @@ body {
   letter-spacing: 0.04em;
   color: $color-default-dark-text;
   background-color: #817c7c;
+
+  cursor: url('..//../images/pointer.svg'), auto;
 }
 
 p,
@@ -22,12 +24,12 @@ h6 {
   list-style: none;
 }
 
-a {
-  cursor: pointer;
-}
+// a {
+//   cursor: pointer;
+// }
 
 button {
-  cursor: pointer;
+  // cursor: pointer;
   padding: 0;
 }
 
