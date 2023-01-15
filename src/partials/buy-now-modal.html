@@ -90,27 +90,37 @@
               />
             </picture>
           </div>
-
           <div class="buy-now__product-thumb brown">milkshake</div>
         </li>
       </ul>
+      
 
       <label class="buy-now__form-label">
-        <input
+        <input onkeyup="checkParams()"
+          id="Buynow_name"
           type="text"
           class="buy-now__form-input"
           name="name"
-          placeholder="Name"
+          placeholder="Name" 
+          required 
+          pattern="[a-zA-Z ]+" 
+          title="Use only letters"
         />
       </label>
+
       <label class="buy-now__form-label">
-        <input
+        <input onkeyup="checkParams()"
+          id="Buynow_tel"
           type="tel"
           class="buy-now__form-input"
           name="phone_number"
-          placeholder="Phone"
-        />
+          placeholder="Phone" 
+          required  
+          pattern="\+\d{3} \d{2} \d{3} \d{2} \d{2}" 
+          title="+xxx xx xxx xx xx">
+        
       </label>
+
       <label class="buy-now__form-label">
         <textarea
           class="buy-now__form-textarea"
@@ -119,7 +129,12 @@
           placeholder="Comment"
         ></textarea>
       </label>
-      <button type="submit" class="buy-now__modal-form-btn">Submit</button>
+      <button type="submit" id="Buynow_submit" class="buy-now__modal-form-btn">Submit</button>
     </form>
+
+
+
+
+
   </div>
 </div>

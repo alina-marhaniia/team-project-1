@@ -227,6 +227,14 @@
     }
 }
 
+.buy-now__form-input:not(:placeholder-shown):required:invalid {
+    border-color: #f44336;
+}
+
+.buy-now__form-input:not(:placeholder-shown):required:valid {
+    border-color: rgba(132, 161, 120, 1);
+}
+
 .buy-now__form-textarea {
     margin-bottom: 24px;
     resize: none;
@@ -300,4 +308,8 @@
         font-size: 14px;
         line-height: 1.21;
     }
+}
+
+.buy-now__modal-form-btn:disabled {
+    background: #ABABAB;
 }

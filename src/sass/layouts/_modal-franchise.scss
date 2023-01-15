@@ -81,6 +81,10 @@
   font-size: 16px;
   line-height: 1.37;
   margin: 24px auto 32px;
+  text-align: center;
+  @media screen and (min-width:768px) {
+    width:322px;
+  }
 }
 
 .franchise__modal-desc {
@@ -107,6 +111,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.franchise__form-input:not(:placeholder-shown):required:invalid {
+  border-color: #f44336;
+}
+
+.franchise__form-input:not(:placeholder-shown):required:valid {
+  border-color: rgba(132, 161, 120, 1);
 }
 
 .franchise__form-input {
@@ -154,6 +166,7 @@
   }
 }
 
+
 .franchise__modal-form-btn {
   width: 114px;
   height: 42px;
@@ -176,6 +189,7 @@
     }
   
     &:focus {
+      background-color: rgba(10, 136, 23, 1);
       color: #fff;
       transition: opacity 300ms linear;
     }
@@ -186,3 +200,9 @@
     line-height: 1.21;
   }
 }
+
+.franchise__modal-form-btn:disabled {
+  background: #ABABAB;
+}
+
+
