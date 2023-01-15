@@ -133,7 +133,12 @@
   @media screen and (min-width: 768px) {
     width: 330px;
     height: 330px;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
     box-shadow: 0px 5.30813px 19.9055px rgb(153 114 23 / 25%);
     border-radius: 165px;
     margin: 0;
@@ -143,7 +148,12 @@
     margin-right: 109px;
     width: 490px;
     height: 490px;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
     border-radius: 250px;
   }
@@ -164,6 +174,7 @@
 .about__button {
   margin-top: 10px;
   transition: background-color 300ms linear;
+  cursor: url('..//../images/pointer.svg'), auto;
 
   @media screen and (min-width: 768px) {
     margin-top: 32px;
