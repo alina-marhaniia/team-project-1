@@ -2,8 +2,31 @@
     <div class="header-container container">
 <nav class="header__navigation">
 <a href="" class="header__logo">
+    <picture>
+<source
+          srcset="
+            ./images/mainlogo-mobile-1x.png 1x, 
+            ./images/mainlogo-mobile-2x.png 2x
+          "
+          media="(max-width:767px)"
+        />
+<source
+          srcset="
+            ./images/mainlogo-tablet-1x.png 1x, 
+            ./images/mainlogo-tablet-2x.png 2x
+          "
+          media="(min-width:768px) and (max-width:1199px)"
+        />
+<source
+          srcset="
+           ./images/mainlogo-desktop-1x.png 1x, 
+           ./images/mainlogo-desktop-2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+         <img class="header__pic" src="./images/mainlogo.png" alt="Logo of ice cream company"/>
+</picture>
 
-    <img class="header__pic" src="./images/mainlogo.png" alt="Logo of ice cream company">
 </a>
     <ul class="header__list list">
     <li class="header__item"> 
