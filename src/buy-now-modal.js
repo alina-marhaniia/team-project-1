@@ -1,14 +1,14 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[buy-now-modal-open]'),
-    closeModalBtn: document.querySelector('[buy-now-modal-close]'),
-    modal: document.querySelector('[buy-now-modal]'),
+    openModalBtnBuynow: document.querySelector('[buy-now-modal-open]'),
+    closeModalBtnBuynow: document.querySelector('[buy-now-modal-close]'),
+    modalBuynow: document.querySelector('[buy-now-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnBuynow.addEventListener('click', toggleModal);
+  refs.closeModalBtnBuynow.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('buy-now__is-hidden');
+    refs.modalBuynow.classList.toggle('buy-now__is-hidden');
   }
 })();
