@@ -165,6 +165,7 @@
   color: $color-default-dark-text;
   text-decoration: none;
   cursor: pointer;
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: #0a8817;
@@ -194,6 +195,7 @@
   text-align: center;
   align-items: center;
   cursor: pointer;
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::after {
     content: '';
     position: relative;
@@ -230,6 +232,7 @@
   text-align: center;
   align-items: center;
   cursor: pointer;
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::after {
     content: '';
     position: relative;
