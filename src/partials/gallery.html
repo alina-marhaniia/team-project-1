@@ -1,42 +1,45 @@
-<div class="container gallery-review-wrap">
-    <section class="gallery">
-        <div class="gallery__content">
-            <div class="slider single-item">
-                <div class="thumb-pic">
-                    <picture>
-                        <source media="(min-width: 1200px)"
-                            srcset="/src/images/gallery/brooke-desktop1x.jpg 1x, /src/images/gallery/brooke-desktop2x.jpg 2x"
-                            >
-        
-                        <source media="(min-width: 768px)"
-                            srcset="/src/images/gallery/brooke-tablet1x.jpg 1x, /src/images/gallery/brooke-tablet2x.jpg 2x"
-                            >
-        
-                        <source media="(max-width: 767px)"
-                            srcset="/src/images/gallery/brooke-mobile1x.jpg 1x, /src/images/gallery/brooke-mobile2x.jpg 2x"
-                            >
-        
-                        <img src="/src/images/gallery/brooke-mobile1x.jpg" alt="мороженое в вафельном стакане">
-                    </picture>
+<section class="gallery">
+    <div class="gallery__content">
+        <div class="swiper-container image-slider">
+            <div class="swiper-wrapper image-slider_wrapper">
+                <div class="swiper-slide image-slider_slide">
+                    <div class="thumb-pic">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="/src/images/gallery/brooke-desktop1x.jpg 1x, /src/images/gallery/brooke-desktop2x.jpg 2x">
+<!-- 
+                            <source media="(min-width: 768px)"
+                                srcset="/src/images/gallery/brooke-tablet1x.jpg 1x, /src/images/gallery/brooke-tablet2x.jpg 2x">
+
+                            <source media="(max-width: 767px)"
+                                srcset="/src/images/gallery/brooke-mobile1x.jpg 1x, /src/images/gallery/brooke-mobile2x.jpg 2x"> -->
+
+                            <img src="/src/images/gallery/brooke-desktop1x.jpg" alt="мороженое в вафельном стакане">
+                        </picture>
+                    </div>
                 </div>
-                      
-                <div class="thumb-pic">
-                    <picture>
-                        <source media="(min-width: 1200px)"
-                            srcset="/src/images/gallery/courtney-desktop1x.jpg 1x, /src/images/gallery/courtney-desktop2x.jpg 2x">
-                        <img src="/src/images/gallery/courtney-desktop1x.jpg" alt="мороженое шариками">
-                    </picture>
+
+                <div class="swiper-slide image-slider_slide">
+                    <div class="thumb-pic">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="/src/images/gallery/courtney-desktop1x.jpg 1x, /src/images/gallery/courtney-desktop2x.jpg 2x">
+                            <img src="/src/images/gallery/courtney-desktop1x.jpg" alt="мороженое шариками">
+                        </picture>
+                    </div>
                 </div>
-                       
-                <div class="thumb-pic">
-                    <picture>
-                        <source media="(min-width: 1200px)"
-                            srcset="/src/images/gallery/unsplash-desktop1x.jpg 1x, /src/images/gallery/unsplash-desktop2x.jpg 2x">
-                        <img src="/src/images/gallery/unsplash-desktop1x.jpg" alt="мороженое на палочке">
-                    </picture>
+
+                <div class="swiper-slide image-slider_slide">
+                    <div class="thumb-pic">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="/src/images/gallery/unsplash-desktop1x.jpg 1x, /src/images/gallery/unsplash-desktop2x.jpg 2x">
+                            <img src="/src/images/gallery/unsplash-desktop1x.jpg" alt="мороженое на палочке">
+                        </picture>
+                    </div>
                 </div>
             </div>
+            <div class="swiper-pagination addition"></div>
         </div>
-
-    </section>
-</div>
+    </div>
+</section>
