@@ -6,28 +6,73 @@
         </svg>
         <form class="buy-now__modal-form">
             <h2 class="buy-now__modal-title">Buy now</h2>
-            <!-- checkbox -->
-            <div class="buy-now__checkbox">
-                <label class="buy-now__cb-label">
-                    <input type="checkbox" name="product" value="ice cream" class="visually-hidden">
-                    ice cream
-                </label>
-                <label class="buy-now__cb-label">
-                    <input type="checkbox" name="product" value="ice coffee" class="visually-hidden"  />
-                    ice coffee
-                </label>
-                <label class="buy-now__cb-label">
-                    <input type="checkbox" name="product" value="milkshake" class="visually-hidden" />
-                    milkshake
-                </label>
-            </div>
 
-            <!-- <ul>
-                <li>ice cream</li>
-                <li>ice coffee</li>
-                <li>milkshake</li>
-            </ul> -->
-        
+            <!-- checkbox -->
+            
+            <ul class="buy-now__list">
+                <li>
+                    <div class="buy-now__pic green">
+                        <picture>
+                            <source srcset="
+                                                    ./images/products/ice-cream-tab.jpg   1x,
+                                                    ./images/products/ice-cream-tab-2.jpg 2x
+                                                " media="(min-width:768px)" />
+                            <source srcset="
+                                                    ./images/products/ice-cream.jpg   1x,
+                                                    ./images/products/ice-cream-2.jpg 2x
+                                                " media="(max-width:767px)" />
+                            <img class="buy-now__img" src="./images/products/ice-cream-des.jpg" alt="ice cream" />
+                        </picture>
+                    </div>
+
+                    <div class="buy-now__product-thumb green">
+                        ice cream
+                    </div> 
+                </li>
+
+                <li>
+                    <div class="buy-now__pic yellow">
+                        <picture>
+                            <source srcset="
+                                        ./images/products/ice-coffee-des.jpg   1x,
+                                        ./images/products/ice-coffee-des-2.jpg 2x
+                                    " media="(min-width:1200px)" />
+                            <source srcset="
+                                        ./images/products/ice-coffee.jpg   1x,
+                                        ./images/products/ice-coffee-2.jpg 2x
+                                    " media="(max-width:767px)" />
+                            <img class="buy-now__img" src="./images/products/ice-coffee-des.jpg" alt="ice coffee" />
+                        </picture>
+                    </div>
+                    
+                    <div class="buy-now__product-thumb yellow">
+                        ice coffee
+                    </div>
+                </li>
+
+                <li>
+                    <div class="buy-now__pic brown">
+                        <picture>
+                            <source srcset="
+                                        ./images/products/milkshakes-des.jpg   1x,
+                                        ./images/products/milkshakes-des-2.jpg 2x
+                                    " media="(min-width:1200px)" />
+                            <source srcset="
+                                        ./images/products/milkshakes.jpg   1x,
+                                        ./images/products/milkshakes-2.jpg 2x
+                                    " media="(max-width:767px)" />
+                            <img class="buy-now__img" src="./images/products/milkshakes-des.jpg" alt="milkshakes" />
+                        </picture>
+                    </div>
+                
+                    <div class="buy-now__product-thumb brown">
+                        milkshake
+                    </div> 
+                </li>
+            </ul>
+
+
+
             <label class="buy-now__form-label">
                 <input type="text" class="buy-now__form-input" name="name" placeholder="Name">
             </label>
@@ -39,6 +84,18 @@
             </label>
             <button type="submit" class="buy-now__modal-form-btn">Submit</button>
         </form>
+
+</div>
+
+
+
+
+
+
+
+
+        
+            
     </div>
 </div>
 
