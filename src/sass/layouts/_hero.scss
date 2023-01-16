@@ -8,13 +8,22 @@
 .hero__ice-cream, .hero__dots{
     position: absolute;
 }
+.hero__item--color:hover{
+  color:#0A8817;
+}
+.hero__item--color:focus{
+  color:#FCFCFC;
+}
+
 @media screen and (max-width: 479px) {
    .hero__container{
     padding-bottom: 236px;
   }
   .hero__ice-cream {
     bottom:0;
+    right: 92px;
     z-index: 2;
+
 }
   .hero__dots {
     bottom: 0;
@@ -27,6 +36,7 @@
   }
   .hero__ice-cream {
     bottom: 0;
+    right: 92px;
     z-index:2;
   }
   .hero__dots {
@@ -78,6 +88,9 @@
 }
  
 @media screen and (min-width: 767px) {
+   .hero__container{
+    padding-bottom: 12px;
+  }
   .hero__title {
     max-width: 247px;
     font-weight: 400;
@@ -104,7 +117,7 @@
     color: #fcfcfc;
   }
   .hero__picture {
-    margin-right: 32px;
+    margin-right: 13px;
     z-index: 2;
   }
   .hero__btn {
@@ -156,6 +169,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+   .hero__container{
+    padding-bottom: 0px;
+  }
 .hero__list{
   position:absolute;
   z-index: 5;
@@ -195,7 +211,7 @@
   }
   .hero__btn{
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     z-index: 5;
   }
    .hero__dots {
@@ -203,6 +219,7 @@
   }
   .hero__ice-cream {
     z-index: 2;
+    right: 92px;
    bottom: 0;
   }
 }
