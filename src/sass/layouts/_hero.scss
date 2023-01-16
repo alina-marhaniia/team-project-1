@@ -9,6 +9,11 @@
 .hero__dots {
   position: absolute;
 }
+
+.hero__button{
+  transition: color 300ms linear;
+}
+
 .hero__item--color{
 transition: color 250ms linear;
 }
