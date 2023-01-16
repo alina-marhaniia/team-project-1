@@ -111,16 +111,16 @@
 .bn_label{
     cursor: url('..//../images/pointer.svg'), auto;
 }
-.bn-input:checked+ .buy-now__pic.green{
-    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+.bn-input:checked+ .buy-now__pic.green {
+    box-shadow: 0 0 10px 10px rgba(10, 136, 23, 0.25);
     border-radius: 50%
 }
 .bn-input:checked+ .buy-now__pic.yellow {
-    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    box-shadow: 0 0 10px 10px rgba(153, 114, 23, 0.25);
     border-radius: 50%
 }
 .bn-input:checked+ .buy-now__pic.brown {
-    box-shadow: 0px 8px 30px rgba(213, 117, 63, 0.5);
+    box-shadow: 0 0 10px 10px rgba(213, 117, 63, 0.25);
     border-radius: 50%
 }
 
