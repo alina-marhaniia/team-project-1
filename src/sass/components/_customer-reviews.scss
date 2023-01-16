@@ -115,3 +115,12 @@
   //transform: translateX(-50%);
   //white-space: nowrap;
 //}
+
+.slick-dots li button::before{
+font-size: 20px;
+color: #b2adad;
+}
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #84a178;
+}
