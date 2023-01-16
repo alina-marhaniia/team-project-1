@@ -2,3 +2,15 @@ $color-default-light-text: #fcfcfc;
 $color-default-dark-text: #131313;
 $color-primary-background: #84a278;
 $color-primary-element: #f8d24e;
+
+// products-info base color 
+:root{
+--products-info-accent-color-yellow: #f8d24e;
+--products-info-title-color-light: #fcfcfc;
+--products-info-text-color-light: #fcfcfc;
+--products-info-title-color-dark: #131313;
+--products-info-text-color-dark: #131313;
+--products-info-hover-focus-green-color: #0a8817;
+--products-info-bgc-dark-olive: #84a178;
+--products-info-bgc-light-olive: #aec6a5;
+}

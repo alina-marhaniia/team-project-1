@@ -1,11 +1,11 @@
-<div class="products-info backdrop is-hidden" data-products-info-modal>
-  <div class="modal">
+<div class="products-info products-info__backdrop is-hidden" data-products-info-modal>
+  <div class="products-info__modal">
     <button
       type="button"
-      class="modal__btn-close"
+      class="products-info__modal-close"
       data-products-info-modal-close
     >
-      <svg class="modal-close-icon" width="18" height="18">
+      <svg class="modal-close-icon" width="24" height="24">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
@@ -22,56 +22,57 @@
       </picture>
     </div>
 
-    <ul class="value__list list">
-      <li class="value__item">
-        <h3 class="value__title">320</h3>
-        <p class="value__text">kcal</p>
+    <ul class="products-info__list list">
+      <li class="products-info__list-item">
+        <h3 class="products-info__list-title">320</h3>
+        <p class="products-info__list-text">kcal</p>
       </li>
-      <li class="value__item">
-        <h3 class="value__title">4g</h3>
-        <p class="value__text">Protein...</p>
+      <li class="products-info__list-item">
+        <h3 class="products-info__list-title">4g</h3>
+        <p class="products-info__list-text">Protein...</p>
       </li>
-      <li class="value__item">
-        <h3 class="value__title">8,2</h3>
-        <p class="value__text">Fats</p>
+      <li class="products-info__list-item">
+        <h3 class="products-info__list-title">8,2</h3>
+        <p class="products-info__list-text">Fats</p>
       </li>
-      <li class="value__item">
-        <h3 class="value__title">40,4g</h3>
-        <p class="value__text">Carbs</p>
+      <li class="products-info__list-item">
+        <h3 class="products-info__list-title">40,4g</h3>
+        <p class="products-info__list-text">Carbs</p>
       </li>
     </ul>
     <h3 class="products-info__title">Ingredients</h3>
-    <ul class="products-info__list list">
-      <li class="products-info__item">
-        <p class="products-info__text">Milk</p>
-        <p class="products-info__text">100ml</p>
+    <ul class="products-ingredients__list list">
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Milk</p>
+        <p class="products-ingredients__text">100ml</p>
       </li>
-      <li class="products-info__item">
-        <p class="products-info__text">Belgian chocolate</p>
-        <p class="products-info__text">20g</p>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Belgian chocolate</p>
+        <p class="products-ingredients__text">20g</p>
       </li>
-      <li class="products-info__item">
-        <p class="products-info__text">Cream</p>
-        <p class="products-info__text">150ml</p>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Cream</p>
+        <p class="products-ingredients__text">150ml</p>
       </li>
-      <li class="products-info__item">
-        <p class="products-info__text">Cocoa powder</p>
-        <p class="products-info__text">30g</p>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Cocoa powder</p>
+        <p class="products-ingredients__text">30g</p>
       </li>
-      <li class="products-info__item">
-        <p class="products-info__text">Sugar</p>
-        <p class="products-info__text">40g</p>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Sugar</p>
+        <p class="products-ingredients__text">40g</p>
       </li>
-      <li class="products-info__item">
-        <p class="products-info__text">Vanilla sugar</p>
-        <p class="products-info__text">10g</p>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Vanilla sugar</p>
+        <p class="products-ingredients__text">10g</p>
       </li>
     </ul>
-    <form class="modal__form">
-      <div class="modal__form-field">
-        <input
+    <form class="products-info__form">
+      <div class="products-info__form-field">
+        <input onkeyup="checkParamsProducts()"
+          id="Products_name"
           type="text"
-          class="modal__input"
+          class="products-info__input"
           name="name"
           placeholder="Name"
           required
@@ -79,26 +80,27 @@
           title="Use only letters"
         />
       </div>
-      <div class="modal__form-field">
-        <input
+      <div class="products-info__form-field">
+        <input onkeyup="checkParamsProducts()"
+        id="Products_tel"
           type="tel"
-          class="modal__input"
+          class="products-info__input"
           name="phone"
           placeholder="Phone"
           required
           minlength="10"
-          pattern="\+\d{3} \d{2} \d{3} \d{2} \d{2}" 
-          title="+xxx xx xxx xx xx">
+          pattern="\+?[0-9\s\-\(\)]+" 
+          title="+380901234567">
       </div>
-      <div class="modal__form-field">
+      <div class="products-info__form-field">
         <textarea
           name="feedback"
-          class="modal__textarea"
+          class="products-info__textarea"
           placeholder="Comment"
         ></textarea>
       </div>
-      <div class="modal__form-field">
-        <button type="submit" class="modal__btn">Submit</button>
+      <div class="products-info__form-field">
+        <button type="submit" class="products-info__btn" id="Products_submit">Submit</button>
       </div>
     </form>
   </div>
