@@ -113,10 +113,24 @@
 //transform: translateX(-50%);
 //white-space: nowrap;
 //}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: url('..//../images/pointer.svg'),auto; 
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
 
 .slick-dots li button::before {
   font-size: 20px;
   color: #b2adad;
+ 
 }
 .slick-dots li.slick-active button:before {
   opacity: 0.75;

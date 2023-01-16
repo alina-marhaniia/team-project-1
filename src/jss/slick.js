@@ -5,6 +5,9 @@ $('.one-time').slick({
   slidesToShow: 1,
   adaptiveHeight: true,
   arrows: false,
- 
+  focusOnSelect: true,
+  focusOnChange: true,
 });
+
+$('.your-element').slick('slickGoTo', index, [, dontAnimate]);
      
