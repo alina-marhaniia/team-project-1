@@ -1,18 +1,46 @@
 (() => {
-  const refs = {
-    openModalBtnProducts: document.querySelector(
-      '[data-products-info-modal-open]'
+  var refsCreame = {
+    openModalBtnProductsCreame: document.querySelector(
+      '[data-products-info-modal-open-creame]'
     ),
-    closeModalBtnProducts: document.querySelector(
+    closeModalBtnProductsCreame: document.querySelector(
       '[data-products-info-modal-close]'
     ),
-    modalProducts: document.querySelector('[data-products-info-modal]'),
+    modalProductsCreame: document.querySelector('[data-products-info-modal]'),
+  };
+  var refsCoffe = {
+    openModalBtnProductsCoffe: document.querySelector(
+      '[data-products-info-modal-open-coffe]'
+    ),
+    closeModalBtnProductsCoffe: document.querySelector(
+      '[data-products-info-modal-close]'
+    ),
+    modalProductsCoffe: document.querySelector('[data-products-info-modal]'),
+  };
+  var refsMilkshake = {
+    openModalBtnProductsMilkshake: document.querySelector(
+      '[data-products-info-modal-open-milkshakes]'
+    ),
+    closeModalBtnProductsMilkshake: document.querySelector(
+      '[data-products-info-modal-close]'
+    ),
+    modalProductsMilkshake: document.querySelector('[data-products-info-modal]'),
   };
 
-  refs.openModalBtnProducts.addEventListener('click', toggleModal);
-  refs.closeModalBtnProducts.addEventListener('click', toggleModal);
+  refsCreame.openModalBtnProductsCreame.addEventListener('click', toggleModal);
+  refsCreame.closeModalBtnProductsCreame.addEventListener('click', toggleModal);
+
+  refsCoffe.openModalBtnProductsCoffe.addEventListener('click', toggleModal);
+  refsCoffe.closeModalBtnProductsCoffe.addEventListener('click', toggleModal);
+
+  refsMilkshake.openModalBtnProductsMilkshake.addEventListener('click', toggleModal);
+  refsMilkshake.closeModalBtnProductsMilkshake.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modalProducts.classList.toggle('is-hidden');
+    refsCreame.modalProductsCreame.classList.toggle('is-hidden');
+    refsCoffe.modalProductsCoffe.classList.toggle('is-hidden');
+    refsMilkshake.modalProductsMilkshake.classList.toggle('is-hidden');
+
   }
+  
 })();
