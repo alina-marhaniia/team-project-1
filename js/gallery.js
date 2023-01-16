@@ -23,5 +23,13 @@
 new Swiper('.image-slider', {
   autoplay: {
     delay: 2000,
+    disableOnInteraction: false,
+    
   },
+  effect: 'fade',
+  fadeEffect: {
+    //Паралельная смена прозрачности
+    crossFade: true
+  },
+
 });
