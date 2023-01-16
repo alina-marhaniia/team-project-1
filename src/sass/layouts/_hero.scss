@@ -75,15 +75,8 @@
   .hero__btn {
     display: none;
   }
-  .hero__ice-cream {
-    bottom: 0;
-    right: 92px;
-    z-index: 2;
-  }
-  .hero__dots {
-    bottom: 0;
-  }
 }
+ 
 @media screen and (min-width: 767px) {
   .hero__title {
     max-width: 247px;
@@ -151,6 +144,14 @@
   }
   .hero__list-cafe {
     padding-top: 53px;
+  }
+   .hero__ice-cream {
+    bottom: 0;
+    right: 92px;
+    z-index: 2;
+  }
+  .hero__dots {
+    bottom: 0;
   }
 }
 
