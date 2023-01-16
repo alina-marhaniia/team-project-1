@@ -2,6 +2,11 @@
   padding-bottom: 170px;
   padding-top: 80px;
 
+    @media screen and (min-width: 480px) {
+        padding-bottom: 75px;
+        padding-top: 315px;
+      }
+
   @media screen and (min-width: 768px) {
     padding-bottom: 121px;
     padding-top: 197px;
@@ -22,6 +27,11 @@ position: relative;
   max-width: 280px;
   padding: 43px 66px 26px 57px;
   text-align: center;
+
+@media screen and (min-width: 478px) {
+    width: 280px;
+    height: 349px;
+    top: 150px;
 
   @media screen and (min-width: 768px){
   width: 705px;
@@ -51,6 +61,7 @@ position: relative;
   //   height: 12px;
   //   background-color: #84a278;
   // }
+}
 }
 
 .customers {
