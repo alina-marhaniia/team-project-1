@@ -106,6 +106,9 @@ height: 42px;
 }
 
 @media screen and (max-width: 767px){
+    .header__mob-button{
+    padding: 12px 36px 12px 22px;
+    }
  .header__button{
  display:none;
     }
