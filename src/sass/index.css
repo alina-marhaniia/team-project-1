@@ -913,8 +913,10 @@ img {
 
 .about__container {
   background-color: #84a178;
+}
+
+.about__container.container {
   padding-top: 60px;
-  padding-bottom: 64px;
 }
 
 .pre-title.about__pre-title {
@@ -1095,7 +1097,7 @@ img {
 
 .about__button {
   margin-top: 10px;
-  transition: background-color 300ms linear;
+  transition: background-color 300ms linear, border 300ms linear;
 }
 @media screen and (min-width: 768px) {
   .about__button {
