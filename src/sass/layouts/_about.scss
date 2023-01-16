@@ -4,8 +4,10 @@
 
 .about__container {
   background-color: #84a178;
+}
+
+.about__container.container {
   padding-top: 60px;
-  padding-bottom: 64px;
 }
 
 .pre-title.about__pre-title {
@@ -173,8 +175,7 @@
 }
 .about__button {
   margin-top: 10px;
-  transition: background-color 300ms linear;
-  cursor: url('..//../images/pointer.svg'), auto;
+  transition: background-color 300ms linear, border 300ms linear;
 
   @media screen and (min-width: 768px) {
     margin-top: 32px;
