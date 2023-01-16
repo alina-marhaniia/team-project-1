@@ -52,7 +52,6 @@
     
     background-color: #fff;
     border: none;
-    cursor: pointer;
 
     display: flex;
     justify-content: center;
@@ -71,7 +70,6 @@
     }
 
 }
-
 
 .buy-now__modal-title {
     font-family: 'Seymour One';
@@ -92,7 +90,6 @@
         }
 }
     
-
 .buy-now__list {
     margin-bottom: 31px;
         @media screen and (min-width:768px){
@@ -112,14 +109,26 @@
 }
 
 .bn_label{
-    cursor: pointer;
+    cursor: url('..//../images/pointer.svg'), auto;
 }
-
+.bn-input:checked+ .buy-now__pic.green{
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    border-radius: 50%
+}
+.bn-input:checked+ .buy-now__pic.yellow {
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    border-radius: 50%
+}
+.bn-input:checked+ .buy-now__pic.brown {
+    box-shadow: 0px 8px 30px rgba(213, 117, 63, 0.5);
+    border-radius: 50%
+}
 
 .buy-now__pic{
     position: relative;
     z-index: 3;
 }
+
 .buy-now__pic::before{
     content: " ";
     position: absolute;
@@ -156,7 +165,7 @@
     border: 2px solid #96AF8C;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 
-    padding: 20px 16px;
+    padding: 20px 13px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -174,6 +183,7 @@
     align-items: flex-end;
     flex-wrap: nowrap;
 
+    margin-left: -1.8px;
 }
 
 .buy-now__product-thumb.yellow {
@@ -215,6 +225,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.buy-now__form-label, 
+.buy-now__form-input, 
+.buy-now__form-textarea{
+    cursor: url('..//../images/pointer.svg'), auto;
 }
 
 .buy-now__form-input {
@@ -287,7 +303,7 @@
 
     display: inline-block;
     color: #131313;
-    cursor: pointer;
+    
 
     font-family: 'Montserrat';
     font-style: normal;

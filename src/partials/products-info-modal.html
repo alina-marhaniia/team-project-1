@@ -1,4 +1,7 @@
-<div class="products-info products-info__backdrop is-hidden" data-products-info-modal>
+<div
+  class="products-info products-info__backdrop is-hidden"
+  data-products-info-modal
+>
   <div class="products-info__modal">
     <button
       type="button"
@@ -69,28 +72,31 @@
     </ul>
     <form class="products-info__form">
       <div class="products-info__form-field">
-        <input onkeyup="checkParamsProducts()"
+        <input
+          onkeyup="checkParamsProducts()"
           id="Products_name"
           type="text"
           class="products-info__input"
           name="name"
           placeholder="Name"
           required
-          pattern="[a-zA-Z ]+" 
+          pattern="[a-zA-Z ]+"
           title="Use only letters"
         />
       </div>
       <div class="products-info__form-field">
-        <input onkeyup="checkParamsProducts()"
-        id="Products_tel"
+        <input
+          onkeyup="checkParamsProducts()"
+          id="Products_tel"
           type="tel"
           class="products-info__input"
           name="phone"
           placeholder="Phone"
           required
-          minlength="10"
-          pattern="\+?[0-9\s\-\(\)]+" 
-          title="+380901234567">
+          minlength="12"
+          pattern="\+\d{12}"
+          title="+xxxxxxxxxxxx"
+        />
       </div>
       <div class="products-info__form-field">
         <textarea
@@ -100,7 +106,9 @@
         ></textarea>
       </div>
       <div class="products-info__form-field">
-        <button type="submit" class="products-info__btn" id="Products_submit">Submit</button>
+        <button type="submit" class="products-info__btn" id="Products_submit">
+          Submit
+        </button>
       </div>
     </form>
   </div>
