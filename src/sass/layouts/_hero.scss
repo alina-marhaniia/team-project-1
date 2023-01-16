@@ -1,73 +1,35 @@
 .hero__container {
   position: relative;
-  width: 100vw;
   padding-top: 45px;
   padding-bottom: 12px;
 
   background-color: $color-primary-background;
-  background-repeat: no-repeat;
-  background-position: bottom 0px center;
-
-  @media screen and(max-width: 479px) {
-    background-image: url('../images/con-mobile@1x.png'),
-      url('../images/dots-mobile-1x.png');
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .hero__container {
-        background-image: url('../images/con-mobile@2x.png'),
-          url('../images/dots-mobile-2x.png');
-      }
-    }
-  }
-  @media screen and(min-width: 480px) {
-    background-image: url('../images/con-mobile@1x.png'),
-      url('../images/dots-mobile2-1x.png');
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .hero__container {
-        background-image: url('../images/con-mobile@2x.png'),
-          url('../images/dots-mobile2-2x.png');
-      }
-    }
-  }
-  @media screen and(min-width: 768px) {
-    background-position: bottom 0px right 92px, bottom 0px center;
-    background-image: url('../images/con-tablet-1x.png'),
-      url('../images/dots-tablet-1x.png');
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .hero__container {
-        background-image: url('../images/con-tablet-2x.png'),
-          url('../images/dots-tablet-2x.png');
-      }
-    }
-  }
-  @media screen and(min-width: 1200px) {
-    background-position: bottom 0px right 92px, bottom 0px center;
-    background-image: url('../images/con-desktop.png'),
-      url('../images/dots-desktop-1x.png');
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .hero__container {
-        background-image: url('../images/con-desktop-2x.png'),
-          url('../images/dots-desktop-2x.png');
-      }
-    }
+}
+.hero__ice-cream, .hero__dots{
+    position: absolute;
+}
+@media screen and (max-width: 479px) {
+  .hero__ice-cream {
+    top: 135%;
+    right: 20%;
+    z-index: 2;
+}
+  .hero__dots {
+    bottom: -160%;
+    right: 0%;
   }
 }
-
+@media screen and (min-width: 480px) {
+  .hero__ice-cream {
+    bottom: 0;
+    right: 10%;
+    z-index:2;
+  }
+  .hero__dots {
+    bottom: 0;
+    right: 0;
+  }
+}
 .hero__list {
   display: flex;
   align-items: center;
@@ -110,6 +72,14 @@
   .hero__list-cafe,
   .hero__btn {
     display: none;
+  }
+  .hero__ice-cream {
+    bottom: 0;
+    right: 92px;
+    z-index: 2;
+  }
+  .hero__dots {
+    bottom: 0;
   }
 }
 @media screen and (min-width: 767px) {
@@ -217,5 +187,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
+  }
+   .hero__dots {
+    bottom: 0;
+  }
+  .hero__ice-cream {
+    z-index: 2;
+   bottom: 0;
   }
 }
