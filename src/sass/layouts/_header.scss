@@ -21,10 +21,11 @@ font-size: 16px;
 line-height: 1.25;
 color: #FCFCFC;
 
+transition: color 300ms linear;
+
 &:hover,
 &:focus{
 color: rgba(19, 19, 19, 1);
-cursor: pointer;
     }
 
 }
@@ -50,7 +51,8 @@ height: 42px;
     border: none;
     background-color: transparent;
     fill: #FFFFFF;
-     z-index: 2;
+    z-index: 2;
+    transition: color 300ms linear;
 }
 
 .menu-btn__close{
@@ -160,10 +162,12 @@ font-size: 16px;
 line-height: 1.25;
 color: #FCFCFC;
 
+transition: color 300ms linear;
+
  &:hover,
 &:focus{
 color: rgba(248, 210, 78, 1);
-cursor: pointer;
+
     }
 
 }
