@@ -10,12 +10,15 @@
   position: absolute;
 }
 
-.hero__button{
-  transition: color 300ms linear;
+.hero__button {
+  transition: border-color 300ms linear;
+  &:hover {
+    border-color: #0a8817;
+  }
 }
 
-.hero__item--color{
-transition: color 250ms linear;
+.hero__item--color {
+  transition: color 250ms linear;
 }
 .hero__item--color:hover {
   color: #0a8817;
