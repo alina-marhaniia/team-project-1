@@ -9,7 +9,9 @@
 .hero__dots {
   position: absolute;
 }
-
+.hero__item--color{
+transition: color 250ms linear;
+}
 .hero__item--color:hover {
   color: #0a8817;
 }
@@ -114,7 +116,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 12px;
   }
   .hero__text {
     max-width: 149px;
