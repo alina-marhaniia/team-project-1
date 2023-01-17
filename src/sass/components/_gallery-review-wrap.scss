@@ -1,20 +1,28 @@
 .gallery-review-wrap {
   position: relative;
   height: 1131px;
-  background-image: url('..//../images/backgroud-wrap-des-1x.png');
+  background-image: url('..//../images/backgroud-wrap-mob-1x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @include retina {
-    background-image: url('..//../images/backgroud-wrap-des-2x.png');
+    background-image: url('..//../images/backgroud-wrap-mob-2x.jpg');
   }
 
   @media screen and(min-width:768px) {
     height: 1017px;
+    background-image: url('..//../images/backgroud-wrap-tab-1x.jpg');
+    @include retina {
+      background-image: url('..//../images/backgroud-wrap-tab-2x.jpg');
+    }
   }
 
   @media screen and(min-width:1200px) {
     height: 1053px;
+    background-image: url('..//../images/backgroud-wrap-des-1x.jpg');
+    @include retina {
+      background-image: url('..//../images/backgroud-wrap-des-2x.jpg');
+    }
   }
 }
